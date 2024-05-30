@@ -117,6 +117,29 @@ function Hero() {
               </ul>
             </div>
           </div>
+          <div className="skills2">
+            <p>Languages</p>
+            <div className="logos">
+              <ul>
+                <div className="box">
+                  <li>
+                    <span className="fi fi-us"></span>
+                  </li>
+                  <li>
+                    <span className="fi fi-br"></span>
+                  </li>
+                </div>
+                <div className="box">
+                  <li>
+                    <span className="fi fi-es"></span>
+                  </li>
+                  <li>
+                    <span className="fi fi-fr"></span>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
