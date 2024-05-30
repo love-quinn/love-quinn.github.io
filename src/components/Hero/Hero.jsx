@@ -1,6 +1,8 @@
-function Hero() {
+import React from "react";
+
+const Hero = React.forwardRef(function Hero(props, ref) {
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" ref={ref}>
       <div className="container">
         <div className="content">
           <div className="hero-main">
@@ -143,6 +145,7 @@ function Hero() {
       </div>
     </section>
   );
-}
+});
 
+Hero.displayName = "Hero";
 export default Hero;

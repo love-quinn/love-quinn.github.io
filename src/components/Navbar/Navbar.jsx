@@ -1,8 +1,15 @@
 // import "./Navbar.scss";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-function Navbar() {
+function Navbar({ heroRef, aboutRef }) {
   const [menuVisible, setMenuVisible] = useState(false);
+
+  const scrollToSection = (ref) => {
+    console.log(ref.current);
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    // ref.current.scrollToSection({ behavior: "smooth" });
+  };
 
   function abrirMenuMobile() {
     setMenuVisible(true);
@@ -18,16 +25,16 @@ function Navbar() {
         <h3 className="logo">Lucas.dev</h3>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a onClick={() => scrollToSection(heroRef)}>Home</a>
+          </li>
+          <li onClick={() => scrollToSection(aboutRef)}>
+            <a>About</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a>Projects</a>
           </li>
           <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
+            <a>Contact</a>
           </li>
           <li>
             <svg
@@ -71,10 +78,24 @@ function Navbar() {
         </span>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a
+              onClick={() => {
+                fecharMenuMobile();
+                scrollToSection(heroRef);
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a
+              onClick={() => {
+                fecharMenuMobile();
+                scrollToSection(aboutRef);
+              }}
+            >
+              About
+            </a>
           </li>
           <li>
             <a href="#projects">Projects</a>
@@ -87,5 +108,10 @@ function Navbar() {
     </>
   );
 }
+
+Navbar.propTypes = {
+  heroRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  aboutRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+};
 
 export default Navbar;
