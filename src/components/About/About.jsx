@@ -6,17 +6,17 @@ const About = React.forwardRef(function About(props, ref) {
         <div className="about-content">
           <div className="img-side">
             <img
-              src="/working-emoji.c5325f52b5be329995a5.png"
+              src="/images/working-emoji.png"
               alt="emoji"
               className="work-emoji"
             ></img>
             <img
-              src="/about-img.webp"
+              src="/images/about-main.avif"
               alt="mee"
               className="img-side__main-img"
             ></img>
             <span>
-              <img src="/circular-text.svg" alt="text"></img>
+              <img src="/images/circular-text.svg" alt="text"></img>
             </span>
           </div>
           <div className="text-side">

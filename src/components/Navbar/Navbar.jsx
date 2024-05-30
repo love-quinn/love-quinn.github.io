@@ -2,13 +2,11 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-function Navbar({ heroRef, aboutRef }) {
+function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
   const [menuVisible, setMenuVisible] = useState(false);
 
   const scrollToSection = (ref) => {
-    console.log(ref.current);
     ref.current.scrollIntoView({ behavior: "smooth" });
-    // ref.current.scrollToSection({ behavior: "smooth" });
   };
 
   function abrirMenuMobile() {
@@ -30,10 +28,10 @@ function Navbar({ heroRef, aboutRef }) {
           <li onClick={() => scrollToSection(aboutRef)}>
             <a>About</a>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(projectsRef)}>
             <a>Projects</a>
           </li>
-          <li>
+          <li onClick={() => scrollToSection(contactRef)}>
             <a>Contact</a>
           </li>
           <li>
@@ -77,31 +75,37 @@ function Navbar({ heroRef, aboutRef }) {
           </svg>
         </span>
         <ul>
-          <li>
-            <a
-              onClick={() => {
-                fecharMenuMobile();
-                scrollToSection(heroRef);
-              }}
-            >
-              Home
-            </a>
+          <li
+            onClick={() => {
+              fecharMenuMobile();
+              scrollToSection(heroRef);
+            }}
+          >
+            <a>Home</a>
           </li>
-          <li>
-            <a
-              onClick={() => {
-                fecharMenuMobile();
-                scrollToSection(aboutRef);
-              }}
-            >
-              About
-            </a>
+          <li
+            onClick={() => {
+              fecharMenuMobile();
+              scrollToSection(aboutRef);
+            }}
+          >
+            <a>About</a>
           </li>
-          <li>
-            <a href="#projects">Projects</a>
+          <li
+            onClick={() => {
+              fecharMenuMobile();
+              scrollToSection(projectsRef);
+            }}
+          >
+            <a>Projects</a>
           </li>
-          <li>
-            <a href="#contact">Contact</a>
+          <li
+            onClick={() => {
+              fecharMenuMobile();
+              scrollToSection(contactRef);
+            }}
+          >
+            <a>Contact</a>
           </li>
         </ul>
       </div>
@@ -112,6 +116,8 @@ function Navbar({ heroRef, aboutRef }) {
 Navbar.propTypes = {
   heroRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   aboutRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  projectsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  contactRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
 };
 
 export default Navbar;

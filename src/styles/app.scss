@@ -4,6 +4,9 @@
 @import "./Navbar.scss";
 @import "./Hero.scss";
 @import "./About.scss";
+@import "./Projects.scss";
+@import "./Contact.scss";
+@import "./Footer.scss";
 
 * {
   box-sizing: border-box;
@@ -26,10 +29,9 @@ body {
   max-width: 107rem;
   margin: 0 auto;
   padding: 0 4rem;
-
   @media (max-width: 300px) {
     padding: 0;
-    min-width: 280px;
+    box-sizing: border-box;
   }
 }
 

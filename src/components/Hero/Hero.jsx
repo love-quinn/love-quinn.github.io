@@ -8,7 +8,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
           <div className="hero-main">
             <div className="hero-text">
               <h1>Front-End React Developer</h1>
-              <img src="/waving_hand.png" alt="waving_hand"></img>
+              <img src="/images/waving_hand.png" alt="waving_hand"></img>
               <p>
                 Hi, I&#39;m Lucas Santana. A passionate Front-end React
                 Developer based in Sao Paulo, Brazil. 📍
@@ -112,6 +112,12 @@ const Hero = React.forwardRef(function Hero(props, ref) {
                 <li>
                   <img
                     src="https://skillicons.dev/icons?i=bootstrap,scss"
+                    alt="skill-icon"
+                  ></img>
+                </li>
+                <li>
+                  <img
+                    src="https://skillicons.dev/icons?i=dart,flutter"
                     alt="skill-icon"
                   ></img>
                 </li>
