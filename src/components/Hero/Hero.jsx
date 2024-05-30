@@ -1,5 +1,4 @@
 function Hero() {
-  const waving_hand = "src/assets/waving_hand.png";
   return (
     <section id="home" className="hero">
       <div className="container">
