@@ -1,0 +1,76 @@
+$background-color: white;
+$gray-bg-color: #f9f9f9;
+$title-color: black;
+$text-color: #767676;
+$header-color: #147efb;
+$black-shade: #2d2e32;
+
+$font-family: "Poppins";
+
+// H1
+@mixin h1() {
+  font-size: 94px;
+  font-weight: light;
+}
+
+// H2
+@mixin h2() {
+  font-size: 59px;
+  font-weight: light;
+}
+
+// H3
+@mixin h3() {
+  color: red;
+  font-size: 53px;
+  font-weight: bold;
+}
+
+// H4
+@mixin h4() {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+// H5
+@mixin h5() {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+// H6
+@mixin h6() {
+  font-size: 19.9px;
+}
+
+// Subtitle
+@mixin subtitle() {
+  font-family: "Mulish";
+  font-size: 17px;
+  font-weight: regular;
+}
+
+// Caption
+@mixin caption() {
+  $caption-size: 17px;
+  $caption-weight: bold;
+}
+
+@mixin body() {
+  // Body 1
+  font-size: 17px;
+  font-weight: 200;
+}
+
+@mixin body() {
+  // Body 2
+  font-size: 17px;
+  font-weight: 200;
+}
+
+@mixin button() {
+  // BUTTON
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
