@@ -2,6 +2,7 @@ const data = [
   {
     projectName: "Moviefy",
     projectImgPath: "/images/moviefy_ipad_pro_fullsize.png",
+    projectImgPathSmall: "/images/moviefy_iphone 14_max.png",
     projectDescription:
       "Discover the daily-most popular movies on earth , with a beautiful responsive and mordern experience, the movie list's updated hourly.",
     githubProjectUrl: `https://github.com/BrazilianBeast/Moviefy`,
@@ -14,6 +15,7 @@ const data = [
   {
     projectName: "Nova Futura",
     projectImgPath: "/images/futura_nest_hub_max.png",
+    projectImgPathSmall: "/images/futura_ipad_mini.png",
     projectDescription:
       "Nova Futura is a modern Brazilian homebroker where people can find diferent options to invest their money at.",
     projectLiveDemoUrl: {
@@ -25,6 +27,7 @@ const data = [
   {
     projectName: "Yt Downloader",
     projectImgPath: "/images/yt_app.png",
+    projectImgPathSmall: "/images/yt_app.png",
     projectDescription:
       "Yt Downloader is a concept desktop app where you can download videos from YouTube by simpling pasting its link.",
     projectLiveDemoUrl: {

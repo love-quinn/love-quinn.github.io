@@ -15,6 +15,7 @@ const Projects = React.forwardRef(function About(props, ref) {
               <Project
                 key={index}
                 projectImgPath={project.projectImgPath}
+                projectImgPathSmall={project.projectImgPathSmall}
                 projectName={project.projectName}
                 projectDescription={project.projectDescription}
                 projectGithubUrl={project.githubProjectUrl}
