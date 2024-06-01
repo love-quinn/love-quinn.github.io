@@ -95,7 +95,7 @@
 
     a:nth-of-type(2) {
       font-size: 3rem;
-      color: #ff0000;
+      color: $youtube-link-color;
     }
 
     @media (max-width: 900px) {
@@ -199,9 +199,6 @@
   font-size: $text-size;
   color: $text-color;
   align-items: center;
-  // position: absolute;
-  // top: 85%;
-  // left: 0;
 
   @media (max-width: 900px) {
     position: initial;
@@ -305,6 +302,8 @@
       span {
         font-size: 2em;
         transition: all ease-in-out 0.3s;
+        border-radius: 5px;
+        border: 1px solid #fff;
 
         &:hover {
           transform: translateY(-1rem);

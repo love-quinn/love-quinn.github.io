@@ -32,6 +32,15 @@
 
   span {
     text-decoration: underline $header-color;
+    a {
+      color: $black-shade;
+
+      font-family: $title-font;
+      &:hover {
+        color: $youtube-link-color;
+        transition: all 0.3s;
+      }
+    }
   }
 
   h3 {
