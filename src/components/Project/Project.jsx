@@ -25,12 +25,17 @@ function Project({
           ))}
         </div>
         <div className="links">
-          <a href={projectGithubUrl} target="_blank">
-            Code
-            <i className="text-4xl fa-brands fa-github" aria-hidden="true"></i>
-          </a>
-          <a href={[projectLiveDemoUrl]} target="_blank">
-            Live demo
+          {projectGithubUrl && (
+            <a href={projectGithubUrl} target="_blank">
+              Code
+              <i
+                className="text-4xl fa-brands fa-github"
+                aria-hidden="true"
+              ></i>
+            </a>
+          )}
+          <a href={[projectLiveDemoUrl.url]} target="_blank">
+            {projectLiveDemoUrl["buttonName"]}
             <i
               className="fa-regular fa-share-from-square"
               aria-hidden="true"
@@ -47,7 +52,7 @@ Project.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   projectGithubUrl: PropTypes.string.isRequired,
-  projectLiveDemoUrl: PropTypes.string.isRequired,
+  projectLiveDemoUrl: PropTypes.object.isRequired,
   projectStack: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

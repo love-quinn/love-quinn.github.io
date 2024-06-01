@@ -27,7 +27,14 @@ const About = React.forwardRef(function About(props, ref) {
             <p>
               Hey, my name is Lucas Santana, and I&#39;m a Frontend Developer.
               My passion is to create and develop a clean UI/UX for my users, in
-              order to help them in their daily life with technology.
+              order to help them in their daily life with technology, I also
+              have a{" "}
+              <span>
+                <a href="https://www.youtube.com/@MonsieurProductions_">
+                  Youtube channel
+                </a>
+              </span>{" "}
+              where I like to share my knoledge with the community.
               <br />
               <br />
               My main stack currently is React/Vite in combination with
