@@ -30,7 +30,10 @@ const About = React.forwardRef(function About(props, ref) {
               order to help them in their daily life with technology, I also
               have a{" "}
               <span>
-                <a href="https://www.youtube.com/@MonsieurProductions_">
+                <a
+                  href="https://www.youtube.com/@MonsieurProductions_"
+                  target="blank"
+                >
                   Youtube channel
                 </a>
               </span>{" "}
