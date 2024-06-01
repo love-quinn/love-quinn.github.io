@@ -37,7 +37,7 @@
 
       font-family: $title-font;
       &:hover {
-        color: #ff0000;
+        color: $youtube-link-color;
         transition: all 0.3s;
       }
     }
