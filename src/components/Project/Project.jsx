@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import { DataContext } from "../../utils/DataContext";
 
 function Project({
   projectImgPath,
@@ -7,6 +8,8 @@ function Project({
   projectName,
   projectDescription,
   projectGithubUrl,
+  projectGithubButtonName,
+  projectButtonFaClass,
   projectLiveDemoUrl,
   projectStack,
 }) {
@@ -36,10 +39,7 @@ function Project({
         ></img>
       </div>
       <div className="pro__text">
-        <h3>
-          {projectName}
-          {/* <span className="date-class">(November 2023)</span>🏋️ */}
-        </h3>
+        <h3>{projectName}</h3>
         <p>{projectDescription}</p>
         <div className="stack">
           {projectStack.map((tech, index) => (
@@ -49,19 +49,13 @@ function Project({
         <div className="links">
           {projectGithubUrl && (
             <a href={projectGithubUrl} target="_blank">
-              Code
-              <i
-                className="text-4xl fa-brands fa-github"
-                aria-hidden="true"
-              ></i>
+              {projectGithubButtonName}
+              <i className="fa-brands fa-github" aria-hidden="true"></i>
             </a>
           )}
           <a href={[projectLiveDemoUrl.url]} target="_blank">
             {projectLiveDemoUrl["buttonName"]}
-            <i
-              className="fa-regular fa-share-from-square"
-              aria-hidden="true"
-            ></i>
+            <i className={projectButtonFaClass} aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -75,6 +69,8 @@ Project.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   projectGithubUrl: PropTypes.string,
+  projectGithubButtonName: PropTypes.string,
+  projectButtonFaClass: PropTypes.string,
   projectLiveDemoUrl: PropTypes.object.isRequired,
   projectStack: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

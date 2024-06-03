@@ -1,24 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../utils/LanguageContext";
 
 const Hero = React.forwardRef(function Hero(props, ref) {
+  const { content } = useContext(LanguageContext);
+
   return (
     <section id="home" className="hero" ref={ref}>
       <div className="container">
         <div className="content">
           <div className="hero-main">
             <div className="hero-text">
-              <h1>Front-End React Developer</h1>
+              <h1>{content.hero.title}</h1>
               <img src="/images/waving_hand.png" alt="waving_hand"></img>
-              <p>
-                Hi, I&#39;m Lucas Santana. A passionate Front-end React
-                Developer based in Sao Paulo, Brazil. 📍
-              </p>
+              <p>{content.hero.description}</p>
               <span>
                 <a
                   aria-label="linkedin"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://www.linkedin.com/in/l-santana-dev/"
+                  href={content.socialMedia.linkedin}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
                   aria-label="YouTube"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://www.youtube.com/@MonsieurProductions_"
+                  href={content.socialMedia.youtube}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
                   aria-label="github"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://github.com/BrazilianBeast"
+                  href={content.socialMedia.github}
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
             </div>
           </div>
           <div className="skills">
-            <p>Tech Stack</p>
+            <p>{content.hero.techStack}</p>
             <div className="logos">
               <ul>
                 <li>
@@ -125,7 +125,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
             </div>
           </div>
           <div className="skills2">
-            <p>Languages</p>
+            <p>{content.hero.languages}</p>
             <div className="logos">
               <ul>
                 <div className="box">

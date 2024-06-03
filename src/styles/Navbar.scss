@@ -76,6 +76,7 @@ nav {
   padding: 25px 40px 25px 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   background-color: $background-color;
   top: 0;
@@ -96,6 +97,12 @@ nav {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
+
+    @media (max-width: 750px) {
+      gap: 0;
+    }
+
 
     a {
       color: $black-shade;

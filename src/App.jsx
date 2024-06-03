@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { LanguageProvider } from "./utils/LanguageContext";
+import { DataProvider } from "./utils/DataContext";
 
 function App() {
   const heroRef = useRef(null);
@@ -14,17 +16,21 @@ function App() {
   const contactRef = useRef(null);
   return (
     <>
-      <Navbar
-        heroRef={heroRef}
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-      />
-      <Hero ref={heroRef} />
-      <About ref={aboutRef} />
-      <Projects ref={projectsRef} />
-      <Contact ref={contactRef} />
-      <Footer />
+      <LanguageProvider>
+        <DataProvider>
+          <Navbar
+            heroRef={heroRef}
+            aboutRef={aboutRef}
+            projectsRef={projectsRef}
+            contactRef={contactRef}
+          />
+          <Hero ref={heroRef} />
+          <About ref={aboutRef} />
+          <Projects ref={projectsRef} />
+          <Contact ref={contactRef} />
+          <Footer />
+        </DataProvider>
+      </LanguageProvider>
     </>
   );
 }

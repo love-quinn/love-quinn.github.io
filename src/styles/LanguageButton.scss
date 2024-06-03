@@ -1,0 +1,34 @@
+
+.lang {
+    align-self: center;
+    img {
+        box-sizing: border-box;
+        position: relative;
+        width: 24;
+        height: 24px;
+    }
+
+    i {
+        font-size: 1.5em;
+    }
+    padding: 5px;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid #d3d3d3;
+    width: 100px;
+
+    @media (max-width: 750px) {
+        padding: 0;
+        border: none;
+      }
+
+    &:hover {
+        border-color: #c3c3c3;
+    }
+}
+
+

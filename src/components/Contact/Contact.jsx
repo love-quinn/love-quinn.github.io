@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../utils/LanguageContext";
 
 const Contact = React.forwardRef(function Contact(props, ref) {
+  const { content } = useContext(LanguageContext);
   return (
     <section id="contact" className="contact" ref={ref}>
       <div className="container">
         <div className="contact__content">
           <div className="contact__title">
-            <p>contact</p>
-            <h3>Don&#39;t be shy! Hit me up! 👇</h3>
+            <p>{content.contact.title}</p>
+            <h3>{content.contact.highlight} 👇</h3>
           </div>
           <div className="contact__icons">
             <div className="contact__icon-box">
@@ -32,8 +34,8 @@ const Contact = React.forwardRef(function Contact(props, ref) {
                 </svg>
               </span>
               <div className="contact__info">
-                <h3>Location</h3>
-                <p>Sao Paulo, Brazil</p>
+                <h3>{content.contact.button1Title}</h3>
+                <p>{content.contact.button1Description}</p>
               </div>
             </div>
             <div className="contact__icon-box">
@@ -55,9 +57,9 @@ const Contact = React.forwardRef(function Contact(props, ref) {
                 </svg>
               </span>
               <div className="contact__info">
-                <h3>Mail</h3>
-                <a href="mailto:stefan.topallovic@gmail.com">
-                  lucaslucal75@gmail.com
+                <h3>{content.contact.button2Title}</h3>
+                <a href={content.contact.emailLink}>
+                  {content.contact.button2Description}
                 </a>
               </div>
             </div>
