@@ -1,9 +1,17 @@
 // import "./Navbar.scss";
-import { useState } from "react";
+import React, { useState, useContext } from "react";
 import PropTypes from "prop-types";
+import LanguageButton from "../LanguageButton/LanguageButton";
+import { LanguageContext } from "../../utils/LanguageContext";
+import { DataContext } from "../../utils/DataContext";
 
 function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
   const [menuVisible, setMenuVisible] = useState(false);
+  const { content, toggleLanguage, isEnglishLanguage } =
+    useContext(LanguageContext);
+
+  const { projectsContent, toggleProjectsLanguage, isEnglishLanguageProjects } =
+    useContext(DataContext);
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -21,18 +29,41 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
     <>
       <nav className={menuVisible ? "hidden" : ""}>
         <h3 className="logo">Lucas.dev</h3>
+
+        {/* Navbar */}
         <ul>
           <li>
-            <a onClick={() => scrollToSection(heroRef)}>Home</a>
+            <a onClick={() => scrollToSection(heroRef)}>
+              {content.navbar.home}
+            </a>
           </li>
           <li onClick={() => scrollToSection(aboutRef)}>
-            <a>About</a>
+            <a>{content.navbar.about}</a>
           </li>
           <li onClick={() => scrollToSection(projectsRef)}>
-            <a>Projects</a>
+            <a>{content.navbar.projects}</a>
           </li>
           <li onClick={() => scrollToSection(contactRef)}>
-            <a>Contact</a>
+            <a>{content.navbar.contact}</a>
+          </li>
+          <li>
+            <a
+              className="lang"
+              onClick={() => {
+                toggleLanguage();
+                toggleProjectsLanguage();
+              }}
+            >
+              <i
+                className={`fa-solid ${
+                  isEnglishLanguage ? "fa-toggle-on" : "fa-toggle-off"
+                }`}
+              ></i>
+              <img
+                className="flag-img"
+                src={isEnglishLanguage ? "/images/us.svg" : "/images/br.svg"}
+              />
+            </a>
           </li>
           <li>
             <svg

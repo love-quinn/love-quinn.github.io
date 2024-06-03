@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { LanguageContext } from "../../utils/LanguageContext";
 
 // eslint-disable-next-line no-unused-vars
 const Footer = React.forwardRef(function Footer(props, ref) {
+  const { content } = useContext(LanguageContext);
+
   return (
     <footer>
       <div className="container">
         <div className="footerc">
-          <h3>Copyright &copy; 2024. All rights are reserved</h3>
+          <h3>{content.footer.copyrightMessage}</h3>
           <div className="footerc__socials">
             <a
               aria-label="linkedin"
               target="_blank"
               rel="noreferrer"
-              href="https://www.linkedin.com/in/l-santana-dev/"
+              href={content.socialMedia.linkedin}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +40,7 @@ const Footer = React.forwardRef(function Footer(props, ref) {
               aria-label="github"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/BrazilianBeast"
+              href={content.socialMedia.github}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
