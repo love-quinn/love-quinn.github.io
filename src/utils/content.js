@@ -9,7 +9,7 @@ const englishContent = {
   },
   hero: {
     title: `Front-End React Developer`,
-    description: `Hi, I'm Lucas. A passionate Front-end React Developer based in Sao Paulo, Brazil. 📍`,
+    description: `Lucas(Love Quinn), is a passionated Front-end React Developer based in Sao Paulo, Brazil. 📍`,
     techStack: `Tech Stack`,
     languages: `Languages`,
   },
@@ -17,7 +17,7 @@ const englishContent = {
     title: "About me",
     title2: `Front-end Developer
         based in Sao Paulo, Brazil 📍`,
-    description1: `Hey, my name is Lucas, and I'm a Frontend Developer.
+    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Frontend Developer.
         My passion is to create and develop a clean UI/UX and Websites/Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,
@@ -42,7 +42,7 @@ const englishContent = {
     copyrightMessage: "Copyright © 2024. All rights are reserved",
   },
   socialMedia: {
-    linkedin: `https://www.linkedin.com/in/l-santana-dev/`,
+    linkedin: `www.linkedin.com/in/love-quinn-dev`,
     youtube: `https://www.youtube.com/channel/UCWY_AGdSl6HCDUHxbNR0fgg`,
     github: `https://github.com/love-quinn`,
   },
@@ -58,7 +58,7 @@ const portugueseContent = {
   },
   hero: {
     title: `Desenvolvedor Front-End`,
-    description: `Olá!, meu nome é Lucas Santana. Um apaixonado desenvolvedor Front-end, localizado em São Paulo, Brasil. 📍`,
+    description: `Lucas(Love Quinn), É um apaixonado desenvolvedor Front-end, localizado em São Paulo, Brasil. 📍`,
     techStack: `Tech Stack`,
     languages: `Idiomas`,
   },
@@ -66,7 +66,7 @@ const portugueseContent = {
     title: `Sobre`,
     title2: `Desenvolvedor Front-end
         situado em São Paulo, Brasil 📍`,
-    description1: `Olá, meu nome é Lucas Santana e sou Desenvolvedor Frontend.
+    description1: `Olá, meu nome é Lucas(Love Quinn) e sou Desenvolvedor Frontend.
         Minha paixão é criar e desenvolver Apps/Websites com UI/UX(interfaces) limpas para meus usuários
         para ajudá-los no dia a dia com a tecnologia, também
         tenho um `,
@@ -91,7 +91,7 @@ const portugueseContent = {
     copyrightMessage: "Copyright © 2024. Todos os direitos reservados",
   },
   socialMedia: {
-    linkedin: `https://www.linkedin.com/in/l-santana-dev/`,
+    linkedin: `www.linkedin.com/in/love-quinn-dev`,
     youtube: `https://www.youtube.com/channel/UCWY_AGdSl6HCDUHxbNR0fgg`,
     github: `https://github.com/love-quinn`,
   },
