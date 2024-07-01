@@ -43,8 +43,8 @@ const englishContent = {
   },
   socialMedia: {
     linkedin: `https://www.linkedin.com/in/l-santana-dev/`,
-    youtube: `https://www.youtube.com/@MonsieurProductions_`,
-    github: `https://github.com/BrazilianBeast`,
+    youtube: `https://www.youtube.com/channel/UCWY_AGdSl6HCDUHxbNR0fgg`,
+    github: `https://github.com/love-quinn`,
   },
 };
 
@@ -92,8 +92,8 @@ const portugueseContent = {
   },
   socialMedia: {
     linkedin: `https://www.linkedin.com/in/l-santana-dev/`,
-    youtube: `https://www.youtube.com/@MonsieurProductions_`,
-    github: `https://github.com/BrazilianBeast`,
+    youtube: `https://www.youtube.com/channel/UCWY_AGdSl6HCDUHxbNR0fgg`,
+    github: `https://github.com/love-quinn`,
   },
 };
 
