@@ -9,7 +9,7 @@ const englishContent = {
   },
   hero: {
     title: `Front-End React Developer`,
-    description: `Hi, I'm Lucas Santana. A passionate Front-end React Developer based in Sao Paulo, Brazil. 📍`,
+    description: `Hi, I'm Lucas. A passionate Front-end React Developer based in Sao Paulo, Brazil. 📍`,
     techStack: `Tech Stack`,
     languages: `Languages`,
   },
@@ -17,7 +17,7 @@ const englishContent = {
     title: "About me",
     title2: `Front-end Developer
         based in Sao Paulo, Brazil 📍`,
-    description1: `Hey, my name is Lucas Santana, and I'm a Frontend Developer.
+    description1: `Hey, my name is Lucas, and I'm a Frontend Developer.
         My passion is to create and develop a clean UI/UX and Websites/Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,

@@ -29,7 +29,7 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
     <>
       <nav className={menuVisible ? "hidden" : ""}>
         <h3 className="logo" onClick={() => scrollToSection(heroRef)}>
-          Lucas.dev
+          Quinn.dev
         </h3>
 
         {/* Navbar */}
