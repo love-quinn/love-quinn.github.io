@@ -29,7 +29,7 @@ const About = React.forwardRef(function About(props, ref) {
             <p>
               {content.about.description1}
               <span>
-                <a href="https://www.youtube.com/@MonsieurProductions_">
+                <a href={content.socialMedia.youtube}>
                   {content.about.spanContent}
                 </a>
               </span>
