@@ -6,12 +6,12 @@ const englishData = [
     projectImgPathSmall: "/images/moviefy_iphone_14_max.png",
     projectDescription:
       "Discover the daily-most popular movies on earth, with a beautiful responsive and modern experience, the movie list's updated hourly.",
-    githubProjectUrl: `https://github.com/BrazilianBeast/Moviefy`,
+    githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
     githubButtonName: `Code`,
     projectLiveDemoUrl: {
       buttonName: "Live demo",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://brazilianbeast.github.io/moviefy/",
+      url: "https://love-quinn.github.io/moviefy/",
     },
     stack: ["React", "Bootstrap 5"],
   },
@@ -37,7 +37,7 @@ const englishData = [
     projectLiveDemoUrl: {
       buttonName: "Code",
       projectButtonFaClass: "fa-brands fa-github",
-      url: "https://github.com/BrazilianBeast/YoutubeDownloader",
+      url: "https://github.com/love-quinn/YoutubeDownloader",
     },
     stack: ["ElectronJs", "JavaScript", "HTML5", "CSS3"],
   },
@@ -50,12 +50,12 @@ const portugueseData = [
     projectImgPathSmall: "/images/moviefy_iphone_14_max.png",
     projectDescription:
       "Descubra os filmes mais populares do mundo diariamente, com uma experiência moderna e responsiva, a lista de filmes é atualizada a cada hora.",
-    githubProjectUrl: `https://github.com/BrazilianBeast/Moviefy`,
+    githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
     githubButtonName: `Código`,
     projectLiveDemoUrl: {
       buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://brazilianbeast.github.io/moviefy/",
+      url: "https://love-quinn.github.io/moviefy/",
     },
     stack: ["React", "Bootstrap 5"],
   },
@@ -80,7 +80,7 @@ const portugueseData = [
       "Yt Downloader é um aplicativo de desktop conceito onde você pode baixar vídeos do YouTube simplesmente colando seu link.",
     projectLiveDemoUrl: {
       buttonName: "Código",
-      url: "https://github.com/BrazilianBeast/YoutubeDownloader",
+      url: "https://github.com/love-quinn/YoutubeDownloader",
       projectButtonFaClass: "fa-brands fa-github",
 
     },
