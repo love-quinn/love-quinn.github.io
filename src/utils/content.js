@@ -42,7 +42,7 @@ const englishContent = {
     copyrightMessage: "Copyright © 2024. All rights are reserved",
   },
   socialMedia: {
-    linkedin: `www.linkedin.com/in/love-quinn-dev`,
+    linkedin: `https://www.linkedin.com/in/love-quinn-dev`,
     youtube: `https://www.youtube.com/channel/UCWY_AGdSl6HCDUHxbNR0fgg`,
     github: `https://github.com/love-quinn`,
   },
@@ -91,7 +91,7 @@ const portugueseContent = {
     copyrightMessage: "Copyright © 2024. Todos os direitos reservados",
   },
   socialMedia: {
-    linkedin: `www.linkedin.com/in/love-quinn-dev`,
+    linkedin: `https://www.linkedin.com/in/love-quinn-dev`,
     youtube: `https://www.youtube.com/channel/UCWY_AGdSl6HCDUHxbNR0fgg`,
     github: `https://github.com/love-quinn`,
   },
