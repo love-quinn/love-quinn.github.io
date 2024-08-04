@@ -18,12 +18,12 @@ const englishContent = {
     title2: `Front-end Developer
         based in Sao Paulo, Brazil 📍`,
     description1: `Hey, my name is Lucas(Love Quinn), and I'm a Frontend Developer.
-        My passion is to create and develop a clean UI/UX and Websites/Apps for my users, in
+        My passion is to create and develop a clean Interfaces, Websites/Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,
     spanContent: `Youtube Channel`,
     description2: ` where I like to share my knoledge with the community.`,
-    description3: `My main stack currently is React/Vite in combination with Bootstrap 5 and TypeScript.`,
+    description3: `My main stack currently is React/Vite in combination with Tailwind CSS and TypeScript.`,
   },
   portfolio: {
     title: `Portfolio`,
@@ -72,7 +72,7 @@ const portugueseContent = {
         tenho um `,
     spanContent: `Canal no Youtube`,
     description2: ` onde gosto de compartilhar meus conhecimentos com a comunidade.`,
-    description3: `Minha stack principal atualmente é React/Vite em conjunto com Bootstrap 5 e TypeScript.`,
+    description3: `Minha stack principal atualmente é React/Vite em conjunto com Tailwind CSS e TypeScript.`,
   },
   portfolio: {
     title: `Portifólio`,
