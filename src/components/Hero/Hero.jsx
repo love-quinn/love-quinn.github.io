@@ -105,13 +105,13 @@ const Hero = React.forwardRef(function Hero(props, ref) {
                 </li>
                 <li>
                   <img
-                    src="https://skillicons.dev/icons?i=react,figma"
+                    src="https://skillicons.dev/icons?i=react,next"
                     alt="skill-icon"
                   ></img>
                 </li>
                 <li>
                   <img
-                    src="https://skillicons.dev/icons?i=bootstrap,scss"
+                    src="https://skillicons.dev/icons?i=tailwind,figma"
                     alt="skill-icon"
                   ></img>
                 </li>
