@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../../utils/LanguageContext";
+import { Typewritter } from "../Typewritter";
 
 const Hero = React.forwardRef(function Hero(props, ref) {
     const { content } = useContext(LanguageContext);
@@ -12,7 +13,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
                         <div className="hero-text">
                             <h1>{content.hero.title}</h1>
                             <img src="/images/waving_hand.png" alt="waving_hand"></img>
-                            <p>{content.hero.description}</p>
+                            <Typewritter content={content.hero.description}/>
                             <span>
                                 <a
                                     aria-label="linkedin"

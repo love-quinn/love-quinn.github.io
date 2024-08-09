@@ -1,7 +1,7 @@
 // utils/data.js
 const englishContent = {
   whatsapp: {
-    link: "https://api.whatsapp.com/send?phone=55119974394302&text=Oi,%20pode%20me%20ajudar?",
+    link: "https://api.whatsapp.com/send?phone=55119974394302&text=Hello!%20Lucas,%20I%27m%20interested%20in%20having%20a%20website%20or%20app.%20Can%20you%20help%20me%20with%20that%3F",
     header: "Quinn.dev",
     description:"Talk to us on WhatsApp",
   },
@@ -13,8 +13,8 @@ const englishContent = {
     languageButton: `English`,
   },
   hero: {
-    title: `Front-End React Developer`,
-    description: `Lucas(Love Quinn), is a passionated Front-end React Developer based in Sao Paulo, Brazil. 📍`,
+    title: `Frontend Software Engineer`,
+    description: `Unlock your business potential with an innovative website or app. Start now and elevate your business to new heights!`,
     techStack: `Tech Stack`,
     languages: `Languages`,
   },
@@ -22,7 +22,7 @@ const englishContent = {
     title: "About me",
     title2: `Front-end Developer
         based in Sao Paulo, Brazil 📍`,
-    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Frontend Developer.
+    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Frontend Software Engineer.
         My passion is to create and develop a clean Interfaces, Websites/Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,
@@ -55,9 +55,9 @@ const englishContent = {
 
 const portugueseContent = {
     whatsapp: {
-        link: "https://api.whatsapp.com/send?phone=55119974394302&text=Oi,%20pode%20me%20ajudar?",
+        link: "https://api.whatsapp.com/send?phone=55119974394302&text=Oi,%20Lucas!%20Tenho%20interesse%20em%20ter%20meu%20site%20ou%20aplicativo,%20pode%20me%20ajudar?",
         header: "Quinn.dev",
-        description:"Fale conosco no WhatsApp",
+        description:"Fale conosco WhatsApp",
       },
   navbar: {
     home: `Início`,
@@ -67,8 +67,8 @@ const portugueseContent = {
     languageButton: `Português`,
   },
   hero: {
-    title: `Desenvolvedor Front-End`,
-    description: `Lucas(Love Quinn), É um apaixonado desenvolvedor Front-end, localizado em São Paulo, Brasil. 📍`,
+    title: `Eng. Software Front-End`,
+    description: `Liberte o potencial do seu negócio com um site ou aplicativo inovador. Comece hoje e leve seu negócio a um novo nível!`,
     techStack: `Tech Stack`,
     languages: `Idiomas`,
   },
@@ -76,7 +76,7 @@ const portugueseContent = {
     title: `Sobre`,
     title2: `Desenvolvedor Front-end
         situado em São Paulo, Brasil 📍`,
-    description1: `Olá, meu nome é Lucas(Love Quinn) e sou Desenvolvedor Frontend.
+    description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Engenheiro de Software Frontend.
         Minha paixão é criar e desenvolver Apps/Websites com UI/UX(interfaces) limpas para meus usuários
         para ajudá-los no dia a dia com a tecnologia, também
         tenho um `,
