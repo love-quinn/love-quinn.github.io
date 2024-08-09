@@ -1,5 +1,10 @@
 // utils/data.js
 const englishContent = {
+  whatsapp: {
+    link: "https://api.whatsapp.com/send?phone=55119974394302&text=Oi,%20pode%20me%20ajudar?",
+    header: "Quinn.dev",
+    description:"Talk to us on WhatsApp",
+  },
   navbar: {
     home: `Home`,
     about: `About`,
@@ -49,6 +54,11 @@ const englishContent = {
 };
 
 const portugueseContent = {
+    whatsapp: {
+        link: "https://api.whatsapp.com/send?phone=55119974394302&text=Oi,%20pode%20me%20ajudar?",
+        header: "Quinn.dev",
+        description:"Fale conosco no WhatsApp",
+      },
   navbar: {
     home: `Início`,
     about: `Sobre`,

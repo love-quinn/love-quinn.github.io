@@ -8,6 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { LanguageProvider } from "./utils/LanguageContext";
 import { DataProvider } from "./utils/DataContext";
+import FloatingWhatsappButton from "./components/FloatingWhatsappButton";
 
 function App() {
   const heroRef = useRef(null);
@@ -28,6 +29,7 @@ function App() {
           <About ref={aboutRef} />
           <Projects ref={projectsRef} />
           <Contact ref={contactRef} />
+          <FloatingWhatsappButton/>
           <Footer />
         </DataProvider>
       </LanguageProvider>

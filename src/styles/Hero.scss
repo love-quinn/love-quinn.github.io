@@ -1,3 +1,89 @@
+#wpp-floating-btn {
+    position: fixed;
+    bottom: 2rem; // Tailwind's "bottom-4"
+    right: 1rem;  // Tailwind's "right-4"
+    background-color: #FFF; // Tailwind's "bg-green-500"
+    padding: .5rem; // Tailwind's "p-4"
+    text-decoration: none;
+    color: #2d2e32;
+    border-radius: 17rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); // Tailwind's "shadow-lg"
+
+    /* Tablet (Portrait) and larger */
+    @media (min-width: 768px) {
+        right: 2rem;
+        padding: 1rem;
+
+        #whatsappImg{
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    /* Desktop and larger */
+    @media (min-width: 1024px) {
+        right: 3rem;
+    }
+
+    
+    &:hover {
+        .tooltipDiv{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 0;
+        }
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .avatar {
+        background-color: #22c55e;
+        padding: 1rem;
+        border-radius: 50%;
+        position: relative;
+
+        .animatedCircle {
+            position: absolute;
+            border: 2px solid #FFF;
+            background-color: #24a3d8;
+            width: 12px;
+            height: 12px;
+            bottom: .3rem;
+            right: .3rem;
+            border-radius: 50%;
+            animation: colorCycle 3s infinite;
+            
+            @keyframes colorCycle {
+                0% {
+                    background-color: #263954;
+                }
+                50% {
+                    background-color: #24a3d8;
+                }
+                100% {
+                    background-color: #263954;
+                }
+            }
+        }
+    }
+
+    .tooltipDiv {
+        display: none;
+        h3{
+            color: #787878;
+
+        }
+    }
+
+        p {
+            display: flex;
+        }
+    
+}
 .hero {
   padding: 10rem 4rem;
   display: flex;
