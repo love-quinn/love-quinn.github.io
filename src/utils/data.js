@@ -29,17 +29,17 @@ const englishData = [
     stack: ["React", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
   },
   {
-    projectName: "Yt Downloader",
-    projectImgPath: "/images/yt_app.png",
-    projectImgPathSmall: "/images/yt_app.png",
+    projectName: "Evento Nacional",
+    projectImgPath: "/images/eventonacional_desktop.jpeg",
+    projectImgPathSmall: "/images/eventonacional_iphone_xr.png",
     projectDescription:
-      "Yt Downloader is a concept desktop app where you can download videos from YouTube by simply pasting its link.",
+      "Evento Nacional is an innovative Brazilian platform where you can find or promote your favorite events with a unique and practical experience.",
     projectLiveDemoUrl: {
-      buttonName: "Code",
-      projectButtonFaClass: "fa-brands fa-github",
-      url: "https://github.com/love-quinn/YoutubeDownloader",
+      buttonName: "Website",
+      projectButtonFaClass: "fa-regular fa-share-from-square",
+      url: "https://eventonacional.com/",
     },
-    stack: ["ElectronJs", "JavaScript", "HTML5", "CSS3"],
+    stack: ["FullStack", "React", "Node", "TailwindCss", "Figma(UI)"],
   },
 ];
 
@@ -66,25 +66,25 @@ const portugueseData = [
     projectDescription:
       "Nova Futura é uma moderna corretora brasileira onde as pessoas podem encontrar diferentes opções para investir seu dinheiro.",
     projectLiveDemoUrl: {
-      buttonName: "Site da empresa",
+      buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
       url: "https://www.novafutura.com.br/",
     },
     stack: ["React", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
   },
   {
-    projectName: "Yt Downloader",
-    projectImgPath: "/images/yt_app.png",
-    projectImgPathSmall: "/images/yt_app.png",
+    projectName: "Evento Nacional",
+    projectImgPath: "/images/eventonacional_desktop.jpeg",
+    projectImgPathSmall: "/images/eventonacional_iphone_xr.png",
     projectDescription:
-      "Yt Downloader é um aplicativo de desktop conceito onde você pode baixar vídeos do YouTube simplesmente colando seu link.",
+      "Evento Nacional é uma plataforma inovadora onde você pode comprar ou promover seus eventos favoritos com uma experiência única e prática.",
     projectLiveDemoUrl: {
-      buttonName: "Código",
-      url: "https://github.com/love-quinn/YoutubeDownloader",
-      projectButtonFaClass: "fa-brands fa-github",
+      buttonName: "Site",
+      url: "https://eventonacional.com/",
+      projectButtonFaClass: "fa-regular fa-share-from-square",
 
     },
-    stack: ["ElectronJs", "JavaScript", "HTML5", "CSS3"],
+    stack: ["FullStack", "React", "Node", "TailwindCss", "Figma(UI)"],
   },
 ];
 
