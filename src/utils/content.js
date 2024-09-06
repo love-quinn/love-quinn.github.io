@@ -43,6 +43,10 @@ const englishContent = {
     button2Description: "lucaslucal75@gmail.com",
     emailLink: "mailto:lucaslucal75@gmail.com",
   },
+  testimonials: {
+    title: "Testimonials",
+    content: "Web developer with several quality projects, he helped me a lot with his skills, knowledge and experience in software development",
+  },
   footer: {
     copyrightMessage: "Copyright © 2024. All rights are reserved",
   },
@@ -96,6 +100,10 @@ const portugueseContent = {
     button2Title: "Email",
     button2Description: "lucaslucal75@gmail.com",
     emailLink: "mailto:lucaslucal75@gmail.com",
+  },
+  testimonials: {
+    title: "Depoimentos",
+    content: "Desenvolvedor web com vários projetos de qualidade, me ajudou bastante com suas habilidades, conhecimentos e experiências em desenvolvimento de software",
   },
   footer: {
     copyrightMessage: "Copyright © 2024. Todos os direitos reservados",

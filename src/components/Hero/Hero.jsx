@@ -12,7 +12,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
                     <div className="hero-main">
                         <div className="hero-text">
                             <h1>{content.hero.title}</h1>
-                            <img src="/images/waving_hand.png" alt="waving_hand"></img>
+                            <img className="avatar" src="/images/waving_hand.png" alt="waving_hand"></img>
                             <Typewritter content={content.hero.description}/>
                             <span>
                                 <a
