@@ -60,7 +60,7 @@ const englishContent = {
       title: "Highly Professional",
       avatar: "/images/marcilio.jpeg",
       name: "Gabriel Marcílio",
-      content: "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
+      content: "He's developed robust and efficient solutions, always with a keen eye for detail and deadlines. In addition to his technical skills, Lucas is also great at collaborating and sharing knowledge.",
     }
   ],
   footer: {
@@ -123,7 +123,7 @@ const portugueseContent = {
       avatar: "/images/carol_avatar.png",
       name: "Carolina Cruz",
       content: 
-      "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
+      "Desenvolvedor web com vários projetos de qualidade, me ajudou bastante com suas habilidades, conhecimentos e experiências em desenvolvimento de software",
     },
     {
       title: "Depoimentos",
