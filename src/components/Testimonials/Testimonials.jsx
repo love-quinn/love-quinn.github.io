@@ -67,7 +67,9 @@ const Testimonials = React.forwardRef(function Testimonials(props, ref) {
             </div>
           </div>
           <div className="testimonials-content">
-            <h6 className="poppins-thin">“{currentTestimonial.content}”</h6>
+            <div className="text-box">
+              <h6 className="poppins-thin">“{currentTestimonial.content}”</h6>
+            </div>
           </div>
         </div>
         <div className="indicator">
