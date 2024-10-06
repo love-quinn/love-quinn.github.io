@@ -7,6 +7,24 @@
     flex-direction: column;
     width: 100%;
     position: relative;
+    align-items: center;
+  }
+
+  .indicator {
+    padding-top: 5rem;
+    display: flex;
+    gap: .5rem;
+
+    .circle {
+      width: 10px;
+      height: 10px;
+      background-color: #c2c2c2;
+      border-radius: 10px;
+    }
+    .active {
+      background-color: #2a8afb;
+    }
+
   }
 
 .testimonials-header {
@@ -43,7 +61,7 @@
     .badge-div {
         position: absolute;
         top: 90%;
-        right: calc(50% - 90px);
+        right: calc(50% - 96px);
     }
   }
 

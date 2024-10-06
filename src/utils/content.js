@@ -43,10 +43,26 @@ const englishContent = {
     button2Description: "lucaslucal75@gmail.com",
     emailLink: "mailto:lucaslucal75@gmail.com",
   },
-  testimonials: {
-    title: "Testimonials",
-    content: "Web developer with several quality projects, he helped me a lot with his skills, knowledge and experience in software development",
-  },
+  testimonials: [
+    {
+      title: "Testimonials",
+      avatar: "/images/carol_avatar.png",
+      name: "Carolina Cruz",
+      content: "Web developer with several quality projects, he helped me a lot with his skills, knowledge and experience in software development",
+    },
+    {
+      title: "Testimonials",
+      avatar: "/images/cherry.jpeg",
+      name: "Jaianne Farias",
+      content: "Lucas was fundamental to the development of projects with excellence, always demonstrating commitment and proactivity.",
+    },
+    {
+      title: "Highly Professional",
+      avatar: "/images/marcilio.jpeg",
+      name: "Gabriel Marcílio",
+      content: "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
+    }
+  ],
   footer: {
     copyrightMessage: "Copyright © 2024. All rights are reserved",
   },
@@ -101,10 +117,27 @@ const portugueseContent = {
     button2Description: "lucaslucal75@gmail.com",
     emailLink: "mailto:lucaslucal75@gmail.com",
   },
-  testimonials: {
-    title: "Depoimentos",
-    content: "Desenvolvedor web com vários projetos de qualidade, me ajudou bastante com suas habilidades, conhecimentos e experiências em desenvolvimento de software",
-  },
+  testimonials: [
+    {
+      title: "Depoimentos",
+      avatar: "/images/carol_avatar.png",
+      name: "Carolina Cruz",
+      content: 
+      "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
+    },
+    {
+      title: "Depoimentos",
+      avatar: "/images/cherry.jpeg",
+      name: "Jaianne Farias",
+      content: "Lucas foi fundamental para o desenvolvimento de projetos com excelência, sempre demonstrando comprometimento e proatividade.",
+    },
+    {
+      title: "Depoimentos",
+      avatar: "/images/marcilio.jpeg",
+      name: "Gabriel Marcílio",
+      content: "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
+    }
+  ],
   footer: {
     copyrightMessage: "Copyright © 2024. Todos os direitos reservados",
   },
