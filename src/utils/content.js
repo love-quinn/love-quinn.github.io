@@ -1,9 +1,10 @@
 // utils/data.js
 const englishContent = {
   whatsapp: {
-    link: "https://api.whatsapp.com/send?phone=5511952035490&text=Hello!%20Lucas,%20I%27m%20interested%20in%20having%20a%20website%20or%20app.%20Can%20you%20help%20me%20with%20that%3F",
+    // link: "https://api.whatsapp.com/send?phone=5511952035490&text=Hello!%20Lucas,%20I%27m%20interested%20in%20having%20a%20website%20or%20app.%20Can%20you%20help%20me%20with%20that%3F",
+    link: "https://discord.gg/S52ujcf7",
     header: "Quinn.dev",
-    description:"Talk to us on WhatsApp",
+    description:"Talk to us on Discord",
   },
   navbar: {
     home: `Home`,
@@ -75,9 +76,10 @@ const englishContent = {
 
 const portugueseContent = {
     whatsapp: {
-        link: "https://api.whatsapp.com/send?phone=5511952035490&text=Oi,%20Lucas!%20Tenho%20interesse%20em%20ter%20meu%20site%20ou%20aplicativo,%20pode%20me%20ajudar?",
+        // link: "https://api.whatsapp.com/send?phone=5511952035490&text=Oi,%20Lucas!%20Tenho%20interesse%20em%20ter%20meu%20site%20ou%20aplicativo,%20pode%20me%20ajudar?",
+        link: "https://discord.gg/S52ujcf7",
         header: "Quinn.dev",
-        description:"Fale conosco WhatsApp",
+        description:"Fale conosco no Discord",
       },
   navbar: {
     home: `Início`,
