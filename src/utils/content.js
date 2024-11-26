@@ -14,14 +14,14 @@ const englishContent = {
     languageButton: `English`,
   },
   hero: {
-    title: `Frontend Software Engineer`,
+    title: `Full Stack Software Engineer`,
     description: `Unlock your business potential with an innovative website or app. Start now and elevate your business to new heights!`,
     techStack: `Tech Stack`,
     languages: `Languages`,
   },
   about: {
     title: "About me",
-    title2: `Front-end Developer
+    title2: `Full Stack Developer
         based in Sao Paulo, Brazil 📍`,
     description1: `Hey, my name is Lucas(Love Quinn), and I'm a Frontend Software Engineer.
         My passion is to create and develop a clean Interfaces, Websites/Apps for my users, in
@@ -89,14 +89,14 @@ const portugueseContent = {
     languageButton: `Português`,
   },
   hero: {
-    title: `Eng. Software Front-End`,
+    title: `Eng. Software Full Stack`,
     description: `Liberte o potencial do seu negócio com um site ou aplicativo inovador. Comece hoje e leve seu negócio a um novo nível!`,
     techStack: `Tech Stack`,
     languages: `Idiomas`,
   },
   about: {
     title: `Sobre`,
-    title2: `Desenvolvedor Front-end
+    title2: `Desenvolvedor Full Stack
         situado em São Paulo, Brasil 📍`,
     description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Engenheiro de Software Frontend.
         Minha paixão é criar e desenvolver Apps/Websites com UI/UX(interfaces) limpas para meus usuários
