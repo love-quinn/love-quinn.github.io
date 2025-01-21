@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const SlideshowProject = ({
   projectImgPath1,
   projectImgPathSmall,
+  projectImgPathSmallMobile,
   projectName,
   projectDescription,
   projectGithubUrl,
@@ -14,7 +15,11 @@ const SlideshowProject = ({
 }) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [projectImgPath1, projectImgPathSmall];
+
+
+
+  
+  const images = isSmallScreen ? [projectImgPath1, projectImgPathSmallMobile] : [projectImgPath1, projectImgPathSmall];
 
   useEffect(() => {
     const handleResize = () => {
@@ -76,6 +81,7 @@ const SlideshowProject = ({
 SlideshowProject.propTypes = {
   projectImgPath1: PropTypes.string.isRequired,
   projectImgPathSmall: PropTypes.string.isRequired,
+  projectImgPathSmallMobile: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   projectGithubUrl: PropTypes.string,

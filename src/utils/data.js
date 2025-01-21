@@ -48,12 +48,13 @@ const englishData = [
     projectName: "Waterfy",
     projectImgPath: "/images/waterfyLogo.png",
     projectImgPathSmall: "/images/FeatureGraphic.png",
+    projectImgPathSmallMobile: "/images/mobileFeatureGraphic.png",
     projectDescription:
       "Waterfy is a mobile app to remind you to drink water during your day and keep yourself hydrated.",
     projectLiveDemoUrl: {
       buttonName: "Download Apk",
       projectButtonFaClass: "fa-solid fa-download",
-      url: "https://drive.google.com/file/d/1k7HbIpeM93XKsQWSpVLJvoXbbna9_gRx/view?usp=sharing",
+      url: "https://drive.google.com/drive/folders/1OZwNzYTCRVZBrmIgyLvXLV-zw04ui7hf?usp=sharing",
     },
     stack: ["React Native", "Android"],
     isSlideshow: true,
@@ -107,6 +108,7 @@ const portugueseData = [
     projectName: "Waterfy",
     projectImgPath: "/images/waterfyLogo.png",
     projectImgPathSmall: "/images/FeatureGraphic.png",
+    projectImgPathSmallMobile: "/images/mobileFeatureGraphic.png",
     projectDescription:
       "Waterfy é um aplicativo móvel que te lembra de beber água durante o dia e manter-se hidratado.",
     projectLiveDemoUrl: {
