@@ -114,7 +114,7 @@ const portugueseData = [
     projectLiveDemoUrl: {
       buttonName: "Baixar Apk",
       projectButtonFaClass: "fa-solid fa-download",
-      url: "https://drive.google.com/file/d/1k7HbIpeM93XKsQWSpVLJvoXbbna9_gRx/view?usp=sharing",
+      url: "https://drive.google.com/drive/folders/1OZwNzYTCRVZBrmIgyLvXLV-zw04ui7hf?usp=sharing",
     },
     stack: ["React Native", "Android"],
     isSlideshow: true,
