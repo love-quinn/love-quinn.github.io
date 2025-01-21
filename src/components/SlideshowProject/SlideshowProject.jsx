@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-function Project({
-  projectImgPath,
+const SlideshowProject = ({
+  projectImgPath1,
   projectImgPathSmall,
   projectName,
   projectDescription,
@@ -11,8 +11,10 @@ function Project({
   projectButtonFaClass,
   projectLiveDemoUrl,
   projectStack,
-}) {
+}) => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [projectImgPath1, projectImgPathSmall];
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,22 +24,31 @@ function Project({
     window.addEventListener("resize", handleResize);
     handleResize();
 
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
     return () => {
       window.removeEventListener("resize", handleResize);
+      clearInterval(interval); // Clear interval on unmount
     };
   }, []);
 
   return (
     <div
-      className={`pro pro__1 undefined ${isSmallScreen ? "small-screen" : ""}`}
+      className={`proslide proslide__1 undefined ${
+        isSmallScreen ? "small-screen" : ""
+      }`}
     >
-      <div className="pro__img">
-        <img
-          src={isSmallScreen ? projectImgPathSmall : projectImgPath}
-          alt={projectName}
-        ></img>
+      <div className="proslide__img">
+        <div id="circles-container">
+          {images.map((_, index) => (
+            <div key={index} className={`circle ${currentImageIndex === index ? 'active' : ''}`}></div>
+          ))}
+        </div>
+        <img src={images[currentImageIndex]} alt={projectName}></img>
       </div>
-      <div className="pro__text">
+      <div className="proslide__text">
         <h3>{projectName}</h3>
         <p>{projectDescription}</p>
         <div className="stack">
@@ -60,10 +71,10 @@ function Project({
       </div>
     </div>
   );
-}
+};
 
-Project.propTypes = {
-  projectImgPath: PropTypes.string.isRequired,
+SlideshowProject.propTypes = {
+  projectImgPath1: PropTypes.string.isRequired,
   projectImgPathSmall: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
@@ -74,4 +85,4 @@ Project.propTypes = {
   projectStack: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default Project;
+export default SlideshowProject;

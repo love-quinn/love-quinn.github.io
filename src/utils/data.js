@@ -14,6 +14,7 @@ const englishData = [
       url: "https://love-quinn.github.io/moviefy/",
     },
     stack: ["React", "Bootstrap 5"],
+    isSlideshow: false,
   },
   {
     projectName: "Nova Futura",
@@ -27,6 +28,7 @@ const englishData = [
       url: "https://www.novafutura.com.br/",
     },
     stack: ["React", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+    isSlideshow: false,
   },
   {
     projectName: "Evento Nacional",
@@ -40,6 +42,21 @@ const englishData = [
       url: "https://eventonacional.com/",
     },
     stack: ["FullStack", "React", "Node", "TailwindCss", "Figma(UI)"],
+    isSlideshow: false,
+  },
+  {
+    projectName: "Waterfy",
+    projectImgPath: "/images/waterfyLogo.png",
+    projectImgPathSmall: "/images/FeatureGraphic.png",
+    projectDescription:
+      "Waterfy is a mobile app to remind you to drink water during your day and keep yourself hydrated.",
+    projectLiveDemoUrl: {
+      buttonName: "Download Apk",
+      projectButtonFaClass: "fa-solid fa-download",
+      url: "https://drive.google.com/file/d/1k7HbIpeM93XKsQWSpVLJvoXbbna9_gRx/view?usp=sharing",
+    },
+    stack: ["React Native", "Android"],
+    isSlideshow: true,
   },
 ];
 
@@ -85,6 +102,20 @@ const portugueseData = [
 
     },
     stack: ["FullStack", "React", "Node", "TailwindCss", "Figma(UI)"],
+  },
+  {
+    projectName: "Waterfy",
+    projectImgPath: "/images/waterfyLogo.png",
+    projectImgPathSmall: "/images/FeatureGraphic.png",
+    projectDescription:
+      "Waterfy é um aplicativo móvel que te lembra de beber água durante o dia e manter-se hidratado.",
+    projectLiveDemoUrl: {
+      buttonName: "Baixar Apk",
+      projectButtonFaClass: "fa-solid fa-download",
+      url: "https://drive.google.com/file/d/1k7HbIpeM93XKsQWSpVLJvoXbbna9_gRx/view?usp=sharing",
+    },
+    stack: ["React Native", "Android"],
+    isSlideshow: true,
   },
 ];
 
