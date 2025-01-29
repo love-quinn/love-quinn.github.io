@@ -22,7 +22,7 @@ const FloatingWhatsappButton = () => {
                         height="28px"
                         decoding="async"
                         data-nimg="1"
-                        src="/images/discord.svg"
+                        src="/images/whatsapp-logo.svg"
                         alt="WhatsApp Logo"
                         style={{ color: "transparent" }}
                     />
