@@ -10,12 +10,13 @@ const englishContent = {
     home: `Home`,
     about: `About`,
     projects: `Projects`,
+    testimonials: `Testimonials`,
     contact: `Contact`,
     languageButton: `English`,
   },
   hero: {
-    title: `Full Stack Software Engineer`,
-    description: `Unlock your business potential with an innovative website or app. Start now and elevate your business to new heights!`,
+    title: `Full Stack Developer`,
+    description: `Have you thought about a website, bot or application? Here you find the solution!`,
     techStack: `Tech Stack`,
     languages: `Languages`,
   },
@@ -23,8 +24,8 @@ const englishContent = {
     title: "About me",
     title2: `Full Stack Developer
         based in Sao Paulo, Brazil 📍`,
-    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Frontend Software Engineer.
-        My passion is to create and develop a clean Interfaces, Websites/Apps for my users, in
+    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Full Stack Developer.
+        My passion is to create and develop a clean Websites , Bots and Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,
     spanContent: `Youtube Channel`,
@@ -85,12 +86,13 @@ const portugueseContent = {
     home: `Início`,
     about: `Sobre`,
     projects: `Projetos`,
+    testimonials: `Depoimentos`,
     contact: `Contato`,
     languageButton: `Português`,
   },
   hero: {
-    title: `Eng. Software Full Stack`,
-    description: `Liberte o potencial do seu negócio com um site ou aplicativo inovador. Comece hoje e leve seu negócio a um novo nível!`,
+    title: `Desenvolvedor Full Stack`,
+    description: `Pensou em um site, bot ou aplicativo? Aqui você encontra a solução!`,
     techStack: `Tech Stack`,
     languages: `Idiomas`,
   },
@@ -98,8 +100,8 @@ const portugueseContent = {
     title: `Sobre`,
     title2: `Desenvolvedor Full Stack
         situado em São Paulo, Brasil 📍`,
-    description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Engenheiro de Software Frontend.
-        Minha paixão é criar e desenvolver Apps/Websites com UI/UX(interfaces) limpas para meus usuários
+    description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Desenvolvedor Full Stack.
+        Minha paixão é criar e desenvolver Aplicativos, Bots e Websites com design limpos e modernos para meus usuários
         para ajudá-los no dia a dia com a tecnologia, também
         tenho um `,
     spanContent: `Canal no Youtube`,

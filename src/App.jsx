@@ -25,6 +25,7 @@ function App() {
             heroRef={heroRef}
             aboutRef={aboutRef}
             projectsRef={projectsRef}
+            testimonialsRef={testimonialsRef}
             contactRef={contactRef}
           />
           <Hero ref={heroRef} />

@@ -1,16 +1,15 @@
 // import "./Navbar.scss";
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import PropTypes from "prop-types";
-import LanguageButton from "../LanguageButton/LanguageButton";
 import { LanguageContext } from "../../utils/LanguageContext";
 import { DataContext } from "../../utils/DataContext";
 
-function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
+function Navbar({ heroRef, aboutRef, projectsRef, testimonialsRef, contactRef }) {
   const [menuVisible, setMenuVisible] = useState(false);
   const { content, toggleLanguage, isEnglishLanguage } =
     useContext(LanguageContext);
 
-  const { projectsContent, toggleProjectsLanguage, isEnglishLanguageProjects } =
+  const { toggleProjectsLanguage } =
     useContext(DataContext);
 
   const scrollToSection = (ref) => {
@@ -44,6 +43,9 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
           </li>
           <li onClick={() => scrollToSection(projectsRef)}>
             <a>{content.navbar.projects}</a>
+          </li>
+          <li onClick={() => scrollToSection(testimonialsRef)}>
+            <a>{content.navbar.testimonials}</a>
           </li>
           <li onClick={() => scrollToSection(contactRef)}>
             <a>{content.navbar.contact}</a>
@@ -114,7 +116,7 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
               scrollToSection(heroRef);
             }}
           >
-            <a>Home</a>
+            <a>{content.navbar.home}</a>
           </li>
           <li
             onClick={() => {
@@ -122,7 +124,7 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
               scrollToSection(aboutRef);
             }}
           >
-            <a>About</a>
+            <a>{content.navbar.about}</a>
           </li>
           <li
             onClick={() => {
@@ -130,7 +132,15 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
               scrollToSection(projectsRef);
             }}
           >
-            <a>Projects</a>
+            <a>{content.navbar.projects}</a>
+          </li>
+          <li
+            onClick={() => {
+              fecharMenuMobile();
+              scrollToSection(testimonialsRef);
+            }}
+          >
+            <a>{content.navbar.testimonials}</a>
           </li>
           <li
             onClick={() => {
@@ -138,7 +148,7 @@ function Navbar({ heroRef, aboutRef, projectsRef, contactRef }) {
               scrollToSection(contactRef);
             }}
           >
-            <a>Contact</a>
+            <a>{content.navbar.contact}</a>
           </li>
         </ul>
       </div>
@@ -150,6 +160,7 @@ Navbar.propTypes = {
   heroRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   aboutRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   projectsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  testimonialsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   contactRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
 };
 
