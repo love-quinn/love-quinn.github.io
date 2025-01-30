@@ -10,10 +10,12 @@ import Footer from "./components/Footer/Footer";
 import { LanguageProvider } from "./utils/LanguageContext";
 import { DataProvider } from "./utils/DataContext";
 import FloatingWhatsappButton from "./components/FloatingWhatsappButton";
+// import Services from "./components/Services/Services"
 
 function App() {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
+  // const servicesRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const testimonialsRef = useRef(null);
@@ -30,6 +32,7 @@ function App() {
           />
           <Hero ref={heroRef} />
           <About ref={aboutRef} />
+          {/* <Services ref={servicesRef}/> */}
           <Projects ref={projectsRef} />
           <Testimonials ref={testimonialsRef} />
           <Contact ref={contactRef} />

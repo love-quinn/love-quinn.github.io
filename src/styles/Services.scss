@@ -1,0 +1,50 @@
+#services-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+#section-title {
+    text-transform: uppercase;
+    color: #147efb;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 8rem;
+}
+
+#section-subtitle {
+    margin-top: 14px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#service-card-container {
+    background-color: #FFF;
+    display: flex;
+    width: 339px;
+    margin-top: 48px;
+    border-radius: 10px;
+    border: 1px solid #2A8BFB;
+    flex-direction: column;
+
+    #card-logo {
+        background-color: #0B0C0D;
+        color: #FFF;
+        width: 283px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding: 1rem;
+        margin: 10px 0;
+    }
+
+}
