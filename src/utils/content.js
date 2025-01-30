@@ -1,10 +1,12 @@
+import { Bot } from "lucide-react";
+
 // utils/data.js
 const englishContent = {
   whatsapp: {
     link: "https://api.whatsapp.com/send?phone=5511932888434&text=Hello!%20Lucas,%20I%27m%20interested%20in%20having%20a%20website%20or%20app.%20Can%20you%20help%20me%20with%20that%3F",
     // link: "https://discord.gg/S52ujcf7",
     header: "Quinn.dev",
-    description:"Talk to us on Whatsapp",
+    description: "Talk to us on Whatsapp",
   },
   navbar: {
     home: `Home`,
@@ -32,6 +34,32 @@ const englishContent = {
     description2: ` where I like to share my knoledge with the community.`,
     description3: `My main stack currently is React/Vite in combination with Tailwind CSS and TypeScript.`,
   },
+  services: {
+    highlightText: "What can I create for you?",
+    icon: Bot,
+    title: "Bots",
+    content: [
+      {
+        title: "✅ Bots for Discord & Telegram",
+        description:
+          "Moderation, custom commands, API integration, and more.",
+      },
+      {
+        title: "✅ Automation & RPA",
+        description:
+          "Automate repetitive tasks and gain productivity.",
+      },
+      {
+        title: "✅ Price Alerts & Queries",
+        description:
+          "Automate repetitive tasks and gain productivity.",
+      },
+      {
+        title: "✅ Scraping & Data Extraction",
+        description: "Automate repetitive tasks and gain productivity.",
+      },
+    ],
+  },
   portfolio: {
     title: `Portfolio`,
     highlight: `Each project is a different work`,
@@ -50,20 +78,23 @@ const englishContent = {
       title: "Testimonials",
       avatar: "/images/carol_avatar.png",
       name: "Carolina Cruz",
-      content: "Web developer with several quality projects, he helped me a lot with his skills, knowledge and experience in software development",
+      content:
+        "Web developer with several quality projects, he helped me a lot with his skills, knowledge and experience in software development",
     },
     {
       title: "Testimonials",
       avatar: "/images/cherry.jpeg",
       name: "Jaianne Farias",
-      content: "Lucas was fundamental to the development of projects with excellence, always demonstrating commitment and proactivity.",
+      content:
+        "Lucas was fundamental to the development of projects with excellence, always demonstrating commitment and proactivity.",
     },
     {
       title: "Highly Professional",
       avatar: "/images/marcilio.jpeg",
       name: "Gabriel Marcílio",
-      content: "He's developed robust and efficient solutions, always with a keen eye for detail and deadlines. In addition to his technical skills, Lucas is also great at collaborating and sharing knowledge.",
-    }
+      content:
+        "He's developed robust and efficient solutions, always with a keen eye for detail and deadlines. In addition to his technical skills, Lucas is also great at collaborating and sharing knowledge.",
+    },
   ],
   footer: {
     copyrightMessage: "Copyright © 2024. All rights are reserved",
@@ -76,12 +107,12 @@ const englishContent = {
 };
 
 const portugueseContent = {
-    whatsapp: {
-        link: "https://api.whatsapp.com/send?phone=5511932888434&text=Oi,%20Lucas!%20Tenho%20interesse%20em%20ter%20meu%20site%20ou%20aplicativo,%20pode%20me%20ajudar?",
-        // link: "https://discord.gg/S52ujcf7",
-        header: "Quinn.dev",
-        description:"Fale conosco no Whatsapp",
-      },
+  whatsapp: {
+    link: "https://api.whatsapp.com/send?phone=5511932888434&text=Oi,%20Lucas!%20Tenho%20interesse%20em%20ter%20meu%20site%20ou%20aplicativo,%20pode%20me%20ajudar?",
+    // link: "https://discord.gg/S52ujcf7",
+    header: "Quinn.dev",
+    description: "Fale conosco no Whatsapp",
+  },
   navbar: {
     home: `Início`,
     about: `Sobre`,
@@ -108,6 +139,32 @@ const portugueseContent = {
     description2: ` onde gosto de compartilhar meus conhecimentos com a comunidade.`,
     description3: `Minha stack principal atualmente é React/Vite em conjunto com Tailwind CSS e TypeScript.`,
   },
+  services: {
+    icon: Bot,
+    highlightText: "O que posso criar para você?",
+    title: "Bots",
+    content: [
+      {
+        title: "✅ Bots para Discord & Telegram",
+        description:
+          "Moderação, comandos personalizados, integração com APIs e mais.",
+      },
+      {
+        title: "✅ Automação & RPA",
+        description:
+          "Automatize tarefas repetitivas e ganhe produtividade.",
+      },
+      {
+        title: "✅ Consultas & Alertas de Preço",
+        description:
+          "Automatize tarefas repetitivas e ganhe produtividade.",
+      },
+      {
+        title: "✅ Scraping & Extração de Dados",
+        description: "Automatize tarefas repetitivas e ganhe produtividade.",
+      },
+    ],
+  },
   portfolio: {
     title: `Portifólio`,
     highlight: `Cada projeto é um trabalho diferente`,
@@ -126,21 +183,23 @@ const portugueseContent = {
       title: "Depoimentos",
       avatar: "/images/carol_avatar.png",
       name: "Carolina Cruz",
-      content: 
-      "Desenvolvedor web com vários projetos de qualidade, me ajudou bastante com suas habilidades, conhecimentos e experiências em desenvolvimento de software",
+      content:
+        "Desenvolvedor web com vários projetos de qualidade, me ajudou bastante com suas habilidades, conhecimentos e experiências em desenvolvimento de software",
     },
     {
       title: "Depoimentos",
       avatar: "/images/cherry.jpeg",
       name: "Jaianne Farias",
-      content: "Lucas foi fundamental para o desenvolvimento de projetos com excelência, sempre demonstrando comprometimento e proatividade.",
+      content:
+        "Lucas foi fundamental para o desenvolvimento de projetos com excelência, sempre demonstrando comprometimento e proatividade.",
     },
     {
       title: "Depoimentos",
       avatar: "/images/marcilio.jpeg",
       name: "Gabriel Marcílio",
-      content: "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
-    }
+      content:
+        "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
+    },
   ],
   footer: {
     copyrightMessage: "Copyright © 2024. Todos os direitos reservados",

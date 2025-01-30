@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 2rem; // Tailwind's "bottom-4"
     right: 1rem;  // Tailwind's "right-4"
-    background-color: #FFF; // Tailwind's "bg-green-500"
+    background-color: #F9F9F9; // Tailwind's "bg-green-500"
     padding: .5rem; // Tailwind's "p-4"
     text-decoration: none;
     color: #2d2e32;
@@ -91,7 +91,7 @@
   flex-direction: column;
   width: 100%;
   position: relative;
-  background-color: $gray-bg-color;
+  background-color: #FFF;
   @media (max-width: 900px) {
     height: auto;
     padding: 11rem 0;

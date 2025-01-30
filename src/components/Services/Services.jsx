@@ -11,10 +11,14 @@ const Services = React.forwardRef(function Services(props, ref) {
         <section className="services" id="services" ref={ref}>
             <div id="services-container">
                 <p id="section-title">Services</p>
-                <p id="section-subtitle">💡 O que posso criar para você?</p>
+                <p id="section-subtitle">💡{content.services.highlightText}</p>
 
-                <div className="service-cards-container">
-                    <ServiceCard icon={<Bot />} />
+                <div id="service-cards-container">
+                        <ServiceCard 
+                            icon={<Bot size={38} />} 
+                            title={content.services.title} 
+                            services={content.services.content}
+                        />
                 </div>
             </div>
         </section>
