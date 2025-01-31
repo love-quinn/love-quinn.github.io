@@ -1,5 +1,3 @@
-import { Bot } from "lucide-react";
-
 // utils/data.js
 const englishContent = {
   whatsapp: {
@@ -36,29 +34,83 @@ const englishContent = {
   },
   services: {
     highlightText: "What can I create for you?",
-    icon: Bot,
-    title: "Bots",
-    content: [
+    cards: [
       {
-        title: "✅ Bots for Discord & Telegram",
-        description:
-          "Moderation, custom commands, API integration, and more.",
+        title: "Bots",
+        icon: "Bot",
+        classBgColor: "bots",
+        content: [
+          {
+            title: "✅ Bots for Discord & Telegram",
+            description:
+              "Moderation, custom commands, API integration, and more.",
+          },
+          {
+            title: "✅ Automation & RPA",
+            description:
+              "Automate repetitive tasks and gain productivity.",
+          },
+          {
+            title: "✅ Price Alerts & Queries",
+            description:
+              "Monitoring of values ​​and notifications in real time.",
+          },
+          {
+            title: "✅ Scraping & Data Extraction",
+            description: "Capture important information from the web automatically.",
+          },
+        ],
       },
       {
-        title: "✅ Automation & RPA",
-        description:
-          "Automate repetitive tasks and gain productivity.",
+        title: "Websites",
+        icon: "Websites",
+        classBgColor: "websites",
+        content: [
+          {
+            title: "✅ Modern and personalized design",
+            description:
+              "Exclusive layouts that matches both beauty and usability.",
+          },
+          {
+            title: "✅ Responsive Websites",
+            description:
+              "Adapted for desktop, tablet and mobile.",
+          },
+          {
+            title: "✅ Optimized Landing Pages",
+            description:
+              "Higher conversions for your business.",
+          },
+          {
+            title: "✅ E-commerces & Blogs",
+            description: "Complete solutions for stores and content creators.",
+          },
+        ],
       },
       {
-        title: "✅ Price Alerts & Queries",
-        description:
-          "Automate repetitive tasks and gain productivity.",
-      },
-      {
-        title: "✅ Scraping & Data Extraction",
-        description: "Automate repetitive tasks and gain productivity.",
+        title: "Android Apps",
+        icon: "Apps",
+        classBgColor: "apps",
+        content: [
+          {
+            title: "✅ Modern and personalized design",
+            description:
+              "Exclusive layouts that matches both beauty and usability for your app.",
+          },
+          {
+            title: "✅ Business and Commercial Apps",
+            description:
+              "Customer management, orders, schedule and more.",
+          },
+          {
+            title: "✅ Integration with APIs and Databases",
+            description:
+              "Comunicação eficiente com sistemas externos.",
+          },
+        ],
       },
     ],
+
   },
   portfolio: {
     title: `Portfolio`,
@@ -140,9 +192,11 @@ const portugueseContent = {
     description3: `Minha stack principal atualmente é React/Vite em conjunto com Tailwind CSS e TypeScript.`,
   },
   services: {
-    icon: Bot,
     highlightText: "O que posso criar para você?",
+    cards: [{
     title: "Bots",
+    icon: "Bot",
+    classBgColor: "bots",
     content: [
       {
         title: "✅ Bots para Discord & Telegram",
@@ -157,13 +211,60 @@ const portugueseContent = {
       {
         title: "✅ Consultas & Alertas de Preço",
         description:
-          "Automatize tarefas repetitivas e ganhe produtividade.",
+          "Monitoramento de valores e notificações em tempo real.",
       },
       {
         title: "✅ Scraping & Extração de Dados",
-        description: "Automatize tarefas repetitivas e ganhe produtividade.",
+        description: "Capture informações importantes da web automaticamente.",
       },
-    ],
+    ]},
+    {
+      title: "Websites",
+      icon: "Websites",
+      classBgColor: "websites",
+      content: [
+        {
+          title: "✅ Design Moderno & Personalizado",
+          description:
+            "Layouts exclusivos que combinam beleza e usabilidade.",
+        },
+        {
+          title: "✅ Sites Responsivos",
+          description:
+            "Adaptados para desktop, tablet e celular.",
+        },
+        {
+          title: "✅ Landing Pages Otimizadas",
+          description:
+            "Conversões mais altas para o seu negócio.",
+        },
+        { 
+          title: "✅ E-commerces & Blogs",
+          description: "Soluções completas para lojas e criadores de conteúdo.",
+        },
+      ]},
+    {
+      title: "Aplicativos Android",
+      icon: "Apps",
+      classBgColor: "apps",
+      content: [
+        {
+          title: "✅ Design Moderno & Personalizado",
+          description:
+            "Layouts exclusivos que combinam beleza e usabilidade para o seu app.",
+        },
+        {
+          title: "✅ Apps Empresariais & Comerciais",
+          description:
+            "Gerenciamento de clientes, pedidos, agenda e mais.",
+        },
+        {
+          title: "✅ Integração com APIs & Banco de Dados",
+          description:
+            "Comunicação eficiente com sistemas externos.",
+        },
+      ]},
+  ]
   },
   portfolio: {
     title: `Portifólio`,

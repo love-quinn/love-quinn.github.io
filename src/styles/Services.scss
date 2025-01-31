@@ -26,22 +26,59 @@
 #service-cards-container {
     display: flex;
     width: 100%;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+        align-items: stretch;
+        flex-direction: row;
+        width: 80%;
+        gap: 3rem;
+    }
+
+    @media (min-width: 1536px) {
+        align-items: stretch;
+        flex-direction: row;
+        width: 60%;
+        gap: 4rem;
+    }
 }
 
 #service-card-container {
     background-color: #FFF;
     display: flex;
-    width: 75%;
+    width:  75%;
     margin-top: 48px;
     border-radius: 10px;
-    border: 1px solid #2A8BFB;
     flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: borderSlide 3s infinite;
+
+
+    &:hover {
+        scale: 105%;
+    }
+
+    // &.current {
+    //     animation: borderSlide 2s infinite;
+    // }
+
+    .bots {
+        background: linear-gradient(90deg, #000 0%, #1B395D 100%);
+    }
+
+    .websites {
+        background: linear-gradient(90deg, #000 0%, #371B5D 100%);
+    }
+
+    .apps {
+        background: linear-gradient(90deg, #000 0%, #405D1B 100%);
+    }
 
     #card-logo {
-        background-color: #0B0C0D;
         color: #FFF;
         width: 85%;
         border-radius: 5px;
@@ -59,7 +96,7 @@
     }
 
     #card-content {
-        width: 80%;
+        width: 85%;
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -83,3 +120,15 @@
     }
 
 }
+
+@keyframes borderSlide {
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--border-color);
+    }
+    100% {
+      border-color: transparent;
+    }
+  }
