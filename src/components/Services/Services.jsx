@@ -9,7 +9,7 @@ const Services = React.forwardRef(function Services(props, ref) {
   return (
     <section className="services" id="services" ref={ref}>
       <div id="services-container">
-        <p id="section-title">Services</p>
+        <p id="section-title">{content.services.mainText}</p>
         <p id="section-subtitle">💡{content.services.highlightText}</p>
         <div id="service-cards-container">
           {content.services.cards.map((cardContent, index) => (

@@ -33,6 +33,7 @@ const englishContent = {
     description3: `My main stack currently is React/Vite in combination with Tailwind CSS and TypeScript.`,
   },
   services: {
+    mainText: "Services",
     highlightText: "What can I create for you?",
     cards: [
       {
@@ -192,6 +193,7 @@ const portugueseContent = {
     description3: `Minha stack principal atualmente é React/Vite em conjunto com Tailwind CSS e TypeScript.`,
   },
   services: {
+    mainText: "Serviços",
     highlightText: "O que posso criar para você?",
     cards: [{
     title: "Bots",
