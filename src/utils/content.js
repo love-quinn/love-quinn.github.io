@@ -4,11 +4,12 @@ const englishContent = {
     link: "https://api.whatsapp.com/send?phone=5511932888434&text=Hello!%20Lucas,%20I%27m%20interested%20in%20having%20a%20website%20or%20app.%20Can%20you%20help%20me%20with%20that%3F",
     // link: "https://discord.gg/S52ujcf7",
     header: "Quinn.dev",
-    description: "Talk to us on Whatsapp",
+    description: "Request a quote on whatsapp",
   },
   navbar: {
     home: `Home`,
     about: `About`,
+    services: `Services`,
     projects: `Projects`,
     testimonials: `Testimonials`,
     contact: `Contact`,
@@ -123,8 +124,8 @@ const englishContent = {
     button1Title: "Location",
     button1Description: "Sao Paulo, Brazil",
     button2Title: "Email",
-    button2Description: "lucaslucal75@gmail.com",
-    emailLink: "mailto:lucaslucal75@gmail.com",
+    button2Description: "lovequinn.desenvolvimento@gmail.com",
+    emailLink: "mailto:lovequinn.desenvolvimento@gmail.com",
   },
   testimonials: [
     {
@@ -164,11 +165,12 @@ const portugueseContent = {
     link: "https://api.whatsapp.com/send?phone=5511932888434&text=Oi,%20Lucas!%20Tenho%20interesse%20em%20ter%20meu%20site%20ou%20aplicativo,%20pode%20me%20ajudar?",
     // link: "https://discord.gg/S52ujcf7",
     header: "Quinn.dev",
-    description: "Fale conosco no Whatsapp",
+    description: "Solicite um orçamento no Whatsapp",
   },
   navbar: {
     home: `Início`,
     about: `Sobre`,
+    services: `Serviços`,
     projects: `Projetos`,
     testimonials: `Depoimentos`,
     contact: `Contato`,
@@ -278,8 +280,8 @@ const portugueseContent = {
     button1Title: "Localização",
     button1Description: "São Paulo, Brasil",
     button2Title: "Email",
-    button2Description: "lucaslucal75@gmail.com",
-    emailLink: "mailto:lucaslucal75@gmail.com",
+    button2Description: "lovequinn.desenvolvimento@gmail.com",
+    emailLink: "mailto:lovequinn.desenvolvimento@gmail.com",
   },
   testimonials: [
     {
