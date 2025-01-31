@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { LanguageContext } from "../../utils/LanguageContext";
 import { DataContext } from "../../utils/DataContext";
 
-function Navbar({ heroRef, aboutRef, projectsRef, testimonialsRef, contactRef }) {
+function Navbar({ heroRef, aboutRef, servicesRef, projectsRef, testimonialsRef, contactRef }) {
   const [menuVisible, setMenuVisible] = useState(false);
   const { content, toggleLanguage, isEnglishLanguage } =
     useContext(LanguageContext);
@@ -40,6 +40,9 @@ function Navbar({ heroRef, aboutRef, projectsRef, testimonialsRef, contactRef })
           </li>
           <li onClick={() => scrollToSection(aboutRef)}>
             <a>{content.navbar.about}</a>
+          </li>
+          <li onClick={() => scrollToSection(servicesRef)}>
+            <a>{content.navbar.services}</a>
           </li>
           <li onClick={() => scrollToSection(projectsRef)}>
             <a>{content.navbar.projects}</a>
@@ -129,6 +132,14 @@ function Navbar({ heroRef, aboutRef, projectsRef, testimonialsRef, contactRef })
           <li
             onClick={() => {
               fecharMenuMobile();
+              scrollToSection(servicesRef);
+            }}
+          >
+            <a>{content.navbar.services}</a>
+          </li>
+          <li
+            onClick={() => {
+              fecharMenuMobile();
               scrollToSection(projectsRef);
             }}
           >
@@ -158,6 +169,7 @@ function Navbar({ heroRef, aboutRef, projectsRef, testimonialsRef, contactRef })
 
 Navbar.propTypes = {
   heroRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  servicesRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   aboutRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   projectsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
   testimonialsRef: PropTypes.shape({ current: PropTypes.instanceOf(Element) }),

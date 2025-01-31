@@ -26,6 +26,7 @@ function App() {
           <Navbar
             heroRef={heroRef}
             aboutRef={aboutRef}
+            servicesRef={servicesRef}
             projectsRef={projectsRef}
             testimonialsRef={testimonialsRef}
             contactRef={contactRef}
