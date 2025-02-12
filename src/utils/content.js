@@ -16,16 +16,16 @@ const englishContent = {
     languageButton: `English`,
   },
   hero: {
-    title: `Full Stack Developer`,
+    title: `Front-end Developer`,
     description: `Have you thought about a website, bot or application? Here you find the solution!`,
     techStack: `Tech Stack`,
     languages: `Languages`,
   },
   about: {
     title: "About me",
-    title2: `Full Stack Developer
+    title2: `Front-end Developer
         based in Sao Paulo, Brazil 📍`,
-    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Full Stack Developer.
+    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Front-end Developer.
         My passion is to create and develop a clean Websites , Bots and Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,
@@ -177,16 +177,16 @@ const portugueseContent = {
     languageButton: `Português`,
   },
   hero: {
-    title: `Desenvolvedor Full Stack`,
+    title: `Desenvolvedor Front-end`,
     description: `Pensou em um site, bot ou aplicativo? Aqui você encontra a solução!`,
     techStack: `Tech Stack`,
     languages: `Idiomas`,
   },
   about: {
     title: `Sobre`,
-    title2: `Desenvolvedor Full Stack
+    title2: `Desenvolvedor Front-end
         situado em São Paulo, Brasil 📍`,
-    description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Desenvolvedor Full Stack.
+    description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Desenvolvedor Front-end.
         Minha paixão é criar e desenvolver Aplicativos, Bots e Websites com design limpos e modernos para meus usuários
         para ajudá-los no dia a dia com a tecnologia, também
         tenho um `,
