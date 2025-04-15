@@ -31,17 +31,17 @@ const englishData = [
     isSlideshow: false,
   },
   {
-    projectName: "Evento Nacional",
-    projectImgPath: "/images/eventonacional_desktop.jpeg",
-    projectImgPathSmall: "/images/eventonacional_iphone_xr.png",
+    projectName: "Gesture Volume Controller",
+    projectImgPath: "/images/gesture-volume-control.jpg",
+    projectImgPathSmall: "/images/gesture-volume-control.jpg",
     projectDescription:
-      "Evento Nacional is an innovative Brazilian platform where you can find or promote your favorite events with a unique and practical experience.",
+      "This project allows you to control your system's volume using hand gestures with webcam.",
     projectLiveDemoUrl: {
-      buttonName: "Website",
+      buttonName: "Code",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://eventonacional.com/",
+      url: "https://github.com/love-quinn/Gesture-Volume-Control",
     },
-    stack: ["FullStack", "React", "Node", "TailwindCss", "Figma(UI)"],
+    stack: ["Computer Vision", "Python", "OpenCv"],
     isSlideshow: false,
   },
   {
@@ -91,18 +91,18 @@ const portugueseData = [
     stack: ["React", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
   },
   {
-    projectName: "Evento Nacional",
-    projectImgPath: "/images/eventonacional_desktop.jpeg",
-    projectImgPathSmall: "/images/eventonacional_iphone_xr.png",
+    projectName: "Controlador de Volume por Gestos",
+    projectImgPath: "/images/gesture-volume-control.jpg",
+    projectImgPathSmall: "/images/gesture-volume-control.jpg",
     projectDescription:
-      "Evento Nacional é uma plataforma inovadora onde você pode comprar ou promover seus eventos favoritos com uma experiência única e prática.",
+      "Este projeto permite controlar o volume do sistema usando sua webcam.",
     projectLiveDemoUrl: {
-      buttonName: "Site",
-      url: "https://eventonacional.com/",
+      buttonName: "Código",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-
+      url: "https://github.com/love-quinn/Gesture-Volume-Control",
     },
-    stack: ["FullStack", "React", "Node", "TailwindCss", "Figma(UI)"],
+    stack: ["Visão Computacional", "Python", "OpenCv"],
+    isSlideshow: false,
   },
   {
     projectName: "Waterfy",
@@ -122,4 +122,3 @@ const portugueseData = [
 ];
 
 export { englishData, portugueseData };
-

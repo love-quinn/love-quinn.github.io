@@ -28,7 +28,7 @@
       width: 53rem;
       height: auto;
       border-radius: 1.7rem;
-      background-color: #000;
+      background-color: transparent;
       overflow: hidden;
       box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
       animation: 2s pulse infinite;
@@ -139,6 +139,7 @@
 
     &__img {
       background-color: #000;
+      background-color: red;
       width: 53rem;
       height: auto;
       border-radius: 1.7rem;
@@ -148,6 +149,7 @@
       box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
       animation: 2s pulse infinite;
       position: relative;
+      object-fit: fill;
 
       #circles-container{
         display: flex;
