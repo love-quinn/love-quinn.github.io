@@ -16,28 +16,27 @@ const SlideshowProject = ({
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-
-
-  
   const images = isSmallScreen ? [projectImgPath1, projectImgPathSmallMobile] : [projectImgPath1, projectImgPathSmall];
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 576);
-    };
+    if (projectImgPath1 && projectImgPathSmall) {
+      const handleResize = () => {
+        setIsSmallScreen(window.innerWidth <= 576);
+      };
 
-    window.addEventListener("resize", handleResize);
-    handleResize();
+      window.addEventListener("resize", handleResize);
+      handleResize();
 
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 3000); // Change image every 3 seconds
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      clearInterval(interval); // Clear interval on unmount
-    };
-  }, []);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+        clearInterval(interval); // Clear interval on unmount
+      };
+    }
+  }, [projectImgPath1, projectImgPathSmall, images.length]);
 
   return (
     <div
@@ -46,12 +45,14 @@ const SlideshowProject = ({
       }`}
     >
       <div className="proslide__img">
+        {projectImgPath1 && projectImgPathSmall && (
         <div id="circles-container">
           {images.map((_, index) => (
             <div key={index} className={`circle ${currentImageIndex === index ? 'active' : ''}`}></div>
           ))}
         </div>
-        <img src={images[currentImageIndex]} alt={projectName}></img>
+        )}
+        <img src={images[currentImageIndex]} alt={projectName} style={{'objectFit': 'contain'}}></img>
       </div>
       <div className="proslide__text">
         <h3>{projectName}</h3>

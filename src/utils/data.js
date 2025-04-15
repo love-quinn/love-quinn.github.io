@@ -33,32 +33,21 @@ const englishData = [
   {
     projectName: "Gesture Volume Controller",
     projectImgPath: "/images/gesture-volume-control.jpg",
-    projectImgPathSmall: "/images/gesture-volume-control.jpg",
     projectDescription:
       "This project allows you to control your system's volume using hand gestures with webcam.",
+    githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
+    githubButtonName: `Code`,
     projectLiveDemoUrl: {
-      buttonName: "Code",
-      projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://github.com/love-quinn/Gesture-Volume-Control",
+      buttonName: "Live demo",
+      projectButtonFaClass: "fa-brands fa-youtube",
+      url: "https://www.youtube.com/shorts/qaIhsLTwghs",
     },
+
     stack: ["Computer Vision", "Python", "OpenCv"],
-    isSlideshow: false,
-  },
-  {
-    projectName: "Waterfy",
-    projectImgPath: "/images/waterfyLogo.png",
-    projectImgPathSmall: "/images/FeatureGraphic.png",
-    projectImgPathSmallMobile: "/images/mobileFeatureGraphic.png",
-    projectDescription:
-      "Waterfy is a mobile app to remind you to drink water during your day and keep yourself hydrated.",
-    projectLiveDemoUrl: {
-      buttonName: "Download Apk",
-      projectButtonFaClass: "fa-solid fa-download",
-      url: "https://drive.google.com/drive/folders/1OZwNzYTCRVZBrmIgyLvXLV-zw04ui7hf?usp=sharing",
-    },
-    stack: ["React Native", "Android"],
     isSlideshow: true,
+    isSlideshowActive: false,
   },
+  
 ];
 
 const portugueseData = [
@@ -96,29 +85,17 @@ const portugueseData = [
     projectImgPathSmall: "/images/gesture-volume-control.jpg",
     projectDescription:
       "Este projeto permite controlar o volume do sistema usando sua webcam.",
+    githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
+    githubButtonName: `Code`,
     projectLiveDemoUrl: {
-      buttonName: "Código",
-      projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://github.com/love-quinn/Gesture-Volume-Control",
+      buttonName: "Demo",
+      projectButtonFaClass: "fa-brands fa-youtube",
+      url: "https://www.youtube.com/shorts/bqE3GCK5QGY",
     },
     stack: ["Visão Computacional", "Python", "OpenCv"],
     isSlideshow: false,
   },
-  {
-    projectName: "Waterfy",
-    projectImgPath: "/images/waterfyLogo.png",
-    projectImgPathSmall: "/images/FeatureGraphic.png",
-    projectImgPathSmallMobile: "/images/mobileFeatureGraphic.png",
-    projectDescription:
-      "Waterfy é um aplicativo móvel que te lembra de beber água durante o dia e manter-se hidratado.",
-    projectLiveDemoUrl: {
-      buttonName: "Baixar Apk",
-      projectButtonFaClass: "fa-solid fa-download",
-      url: "https://drive.google.com/drive/folders/1OZwNzYTCRVZBrmIgyLvXLV-zw04ui7hf?usp=sharing",
-    },
-    stack: ["React Native", "Android"],
-    isSlideshow: true,
-  },
+
 ];
 
 export { englishData, portugueseData };
