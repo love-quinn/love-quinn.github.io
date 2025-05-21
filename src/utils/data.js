@@ -1,6 +1,21 @@
 // src/utils/dataContent.js
 const englishData = [
   {
+    projectName: "Biofy.Shop",
+    projectImgPath: "/images/desktop-biofy.png",
+    projectImgPathSmall: "/images/mobile-biofy-image-iphone-14.png",
+    projectDescription:
+      "Biofy.Shop is a modern link-in-bio platform designed for sellers.Create a personalized page, showcase your products, connect with your clients.",
+    // ...existing code...
+    projectLiveDemoUrl: {
+      buttonName: "Website",
+      projectButtonFaClass: "fa-regular fa-share-from-square",
+      url: "https://www.biofy.shop/",
+    },
+    stack: ["Next.Js", "React", "TypeScript", "JavaScript"],
+    isSlideshow: false,
+  },
+  {
     projectName: "Moviefy",
     projectImgPath: "/images/moviefy_ipad_pro_fullsize.png",
     projectImgPathSmall: "/images/moviefy_iphone_14_max.png",
@@ -23,7 +38,7 @@ const englishData = [
     projectDescription:
       "Nova Futura is a modern Brazilian homebroker where people can find different options to invest their money.",
     projectLiveDemoUrl: {
-      buttonName: "Company website",
+      buttonName: "Website",
       projectButtonFaClass: "fa-regular fa-share-from-square",
       url: "https://www.novafutura.com.br/",
     },
@@ -47,10 +62,23 @@ const englishData = [
     isSlideshow: true,
     isSlideshowActive: false,
   },
-  
 ];
 
 const portugueseData = [
+  {
+    projectName: "Biofy.Shop",
+    projectImgPath: "/images/desktop-biofy.png",
+    projectImgPathSmall: "/images/mobile-biofy-image-iphone-14.png",
+    projectDescription:
+      "Biofy.Shop é uma moderna plataforma de link na bio projetada para vendedores. Crie uma página personalizada, mostre seus produtos, conecte-se com seus clientes.",
+    projectLiveDemoUrl: {
+      buttonName: "Site",
+      projectButtonFaClass: "fa-regular fa-share-from-square",
+      url: "https://www.biofy.shop/",
+    },
+    stack: ["Next.Js", "React", "TypeScript", "JavaScript"],
+    isSlideshow: false,
+  },
   {
     projectName: "Moviefy",
     projectImgPath: "/images/moviefy_ipad_pro_fullsize.png",
@@ -95,7 +123,6 @@ const portugueseData = [
     stack: ["Visão Computacional", "Python", "OpenCv"],
     isSlideshow: false,
   },
-
 ];
 
 export { englishData, portugueseData };
