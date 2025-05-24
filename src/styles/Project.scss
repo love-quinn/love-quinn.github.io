@@ -5,6 +5,12 @@
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     border-radius: 1.7rem;
 
+    transition: all 0.5s ease;
+
+    &:hover {
+      scale: 1.05;
+    }
+
     &__1 {
       height: 40rem;
       flex-direction: row;
@@ -151,7 +157,7 @@
       position: relative;
       object-fit: fill;
 
-      #circles-container{
+      #circles-container {
         display: flex;
         gap: 10px;
         position: absolute;
@@ -204,8 +210,6 @@
         transition: transform 1.5s ease;
         margin: 0 auto;
       }
-
-      
     }
 
     &__text {
