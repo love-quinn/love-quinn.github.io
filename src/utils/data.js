@@ -3,7 +3,7 @@ const englishData = [
   {
     projectName: "Biofy.Shop",
     projectImgPath: "/images/desktop-biofy.png",
-    projectImgPathSmall: "/images/mobile-biofy-image-iphone-14.png",
+    projectImgPathSmall: "/images/mobile-biofy-iphone-14.png",
     projectDescription:
       "Biofy.Shop is a modern link-in-bio platform designed for sellers.Create a personalized page, showcase your products, connect with your clients.",
     // ...existing code...
@@ -16,20 +16,17 @@ const englishData = [
     isSlideshow: false,
   },
   {
-    projectName: "Moviefy",
-    projectImgPath: "/images/moviefy_ipad_pro_fullsize.png",
-    projectImgPathSmall: "/images/moviefy_iphone_14_max.png",
+    projectName: "Otavio Lawyers",
+    projectImgPath: "/images/desktop-otavio-advogados.png",
+    projectImgPathSmall: "/images/mobile-otavio-advogados.png",
     projectDescription:
-      "Discover the daily-most popular movies on earth, with a beautiful responsive and modern experience, the movie list's updated hourly.",
-    githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
-    githubButtonName: `Code`,
+      "Landing Page for a Legal Advisory and Consultancy in Uberlândia.",
     projectLiveDemoUrl: {
-      buttonName: "Live demo",
+      buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://love-quinn.github.io/moviefy/",
+      url: "https://otavio-advogados.kesug.com/",
     },
-    stack: ["React", "Bootstrap 5"],
-    isSlideshow: false,
+    stack: ["Elementor", "Wordpress"],
   },
   {
     projectName: "Nova Futura",
@@ -68,7 +65,7 @@ const portugueseData = [
   {
     projectName: "Biofy.Shop",
     projectImgPath: "/images/desktop-biofy.png",
-    projectImgPathSmall: "/images/mobile-biofy-image-iphone-14.png",
+    projectImgPathSmall: "/images/mobile-biofy-iphone-14.png",
     projectDescription:
       "Biofy.Shop é uma moderna plataforma de link na bio projetada para vendedores. Crie uma página personalizada, mostre seus produtos, conecte-se com seus clientes.",
     projectLiveDemoUrl: {
@@ -80,19 +77,17 @@ const portugueseData = [
     isSlideshow: false,
   },
   {
-    projectName: "Moviefy",
-    projectImgPath: "/images/moviefy_ipad_pro_fullsize.png",
-    projectImgPathSmall: "/images/moviefy_iphone_14_max.png",
+    projectName: "Otavio Advogados",
+    projectImgPath: "/images/desktop-otavio-advogados.png",
+    projectImgPathSmall: "/images/mobile-otavio-advogados.png",
     projectDescription:
-      "Descubra os filmes mais populares do mundo diariamente, com uma experiência moderna e responsiva, a lista de filmes é atualizada a cada hora.",
-    githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
-    githubButtonName: `Código`,
+      "Landing Page para uma Assesoria e Consultoria Jurídica em Uberlândia.",
     projectLiveDemoUrl: {
       buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://love-quinn.github.io/moviefy/",
+      url: "https://otavio-advogados.kesug.com/",
     },
-    stack: ["React", "Bootstrap 5"],
+    stack: ["Elementor", "Wordpress"],
   },
   {
     projectName: "Nova Futura",
@@ -114,7 +109,7 @@ const portugueseData = [
     projectDescription:
       "Este projeto permite controlar o volume do sistema usando sua webcam.",
     githubProjectUrl: `https://github.com/love-quinn/Moviefy`,
-    githubButtonName: `Code`,
+    githubButtonName: `Código Fonte`,
     projectLiveDemoUrl: {
       buttonName: "Demo",
       projectButtonFaClass: "fa-brands fa-youtube",
