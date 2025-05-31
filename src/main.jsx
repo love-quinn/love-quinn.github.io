@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-
+import { createInstance } from "plausible-tracker";
 // Initialize Plausible
 try {
   const plausible = createInstance({
