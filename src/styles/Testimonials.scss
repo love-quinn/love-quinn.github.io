@@ -1,113 +1,290 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-.testimonials {
-    padding: 10rem 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-    align-items: center;
-  }
-
-  .indicator {
-    padding-top: 5rem;
-    display: flex;
-    gap: .5rem;
-
-    .circle {
-      width: 10px;
-      height: 10px;
-      background-color: #c2c2c2;
-      border-radius: 10px;
-    }
-    .active {
-      background-color: #2a8afb;
-    }
-
-  }
-
-.testimonials-header {
-    color: #147efb;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-    text-align: center;
+.testimonials-section {
+  padding: 10rem 4rem;
+  background-color: $gray-bg-color;
+  min-height: 500px;
 }
 
-  #testimonial-avatar {
-    margin: 3rem 0 0 0;
-    border-radius: 50%;
-  }
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.testimonials-header {
+  margin-bottom: 60px;
+}
+
+.testimonials-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2D2E32;
+  margin-bottom: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.testimonials-badge {
+  border: 1px solid #147EFB;
+  display: flex;
+  max-width: 160px;
+  margin: 0 auto;
+  border-radius: 12px;
+  line-height: 1.6;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 3px 6px;
+  color: $header-color;
+  margin-bottom: 12px;
+}
+
+#testimonials-crown {
+  color: $header-color;
+}
+
+.testimonials-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: left;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.testimonial-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.testimonial-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+  font-style: italic;
+}
+
+.video-testimonials {
+  margin: 60px 0;
+
+  .video-testimonials-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 2rem;
+    
+    .video-testimonials-title {
+      font-size: 1.7rem;
+      color: #2D2E32;
+      margin: 0; // Reset default h3 margin
+      font-weight: 500;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1; // Ensure consistent line height
+    }
+    
+    svg {
+      color: #2D2E32;
+      margin-top: 2px; // Fine-tune icon position
+    }
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .video-container {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background: #000;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.15);
+      }
+      
+      .video-embed {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+      
+      .video-thumbnail {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        cursor: pointer;
+        overflow: hidden;
+        
+        .thumbnail-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+        
+        .play-button {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          
+          .play-icon {
+            color: white;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            opacity: 0.9;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+          }
+        }
+        
+        .video-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.3);
+          transition: background 0.3s ease;
+        }
+        
+        &:hover {
+          .thumbnail-image {
+            transform: scale(1.05);
+          }
+          
+          .play-icon {
+            transform: translate(-50%, -50%) scale(1.1);
+            opacity: 1;
+          }
+          
+          .video-overlay {
+            background: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+      
+      .video-footer {
+        background: white;
+        padding: 0.75rem 1rem;
+        
+        .video-name {
+          margin: 0;
+          font-size: 13px;
+          font-weight: 600;
+          color: #2D2E32;
+          text-align: center;
+          margin-bottom: 0.25rem;
+        }
+        
+        .language-indicator {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 11px;
+          color: #666;
+          gap: 0.25rem;
+          
+          span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: #f5f5f5;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 500;
+            color: #555;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 15px;
+  }
+  
   .testimonials-title {
-    padding-top: 4rem;
-    font-size: 2rem;
-    padding-right: 20px;
-
+    font-size: 26px;
+    font-weight: bold;
   }
-
-  .flex {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    height: 20px;
-    // background-color: red;
-
-    .badge-div {
-        position: absolute;
-        top: 90%;
-        right: calc(50% - 96px);
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+  
+  .video-testimonials {
+    margin: 40px 0;
+    
+    .video-testimonials-title {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .video-grid {
+      gap: 1.5rem;
     }
   }
-
-  #testimonial-title {
-    color: #147efb;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.7rem;
-  }
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-        width: 80px;;
-    }
-  }
-
-  #checked-badge {
-    width: 25px;
-  }
-
-  .testimonials-content {
-    margin-top: 5rem;
-    font-style: italic;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 3rem;
-    text-align: center;
-    padding-left: 10px;
-    width: 100%;  
-    @media (min-width: 400px) {
-      .text-box {
-        width: 80%;
-      }
-    }  
-    @media (min-width: 1280px) {
-      .text-box {
-        width: 50%;
-      }
-    }  
-  }
-
-  .poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight:300;
-    font-style: italic;
-  }
+}

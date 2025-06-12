@@ -1,83 +1,110 @@
 import React, { useContext, useState, useEffect } from "react";
 import { LanguageContext } from "../../utils/LanguageContext";
+import { Clapperboard, Crown, Play, Star } from "lucide-react";
 
 const Testimonials = React.forwardRef(function Testimonials(props, ref) {
   const { content } = useContext(LanguageContext);
 
-  // Array of testimonials with different titles, images, and content
-  const testimonials = [
-    {
-      title: "Amazing Service",
-      avatar: "/images/carol_avatar.png",
-      name: "Carolina Cruz",
-      content:
-        "Web developer with several quality projects, he helped me a lot with his skills, knowledge and experience in software development",
-    },
-    {
-      title: "Incredible Support",
-      avatar: "/images/cherry.jpeg",
-      name: "Jaianne Farias",
-      content:
-        "Lucas foi fundamental para o desenvolvimento de projetos com excelência, sempre demonstrando comprometimento e proatividade.",
-    },
-    {
-      title: "Highly Professional",
-      avatar: "/images/marcilio.jpeg",
-      name: "Gabriel Marcílio",
-      content:
-        "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
-    },
-  ];
-
   // State to track the current testimonial
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [playingVideo, setPlayingVideo] = useState(null);
 
-  // Cycle through testimonials every 5 seconds
+  // Cycle through testimonials every 7.5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(
         (prevIndex) => (prevIndex + 1) % content.testimonials.length
       );
-    }, 7500); // Change every 5 seconds
-    return () => clearInterval(interval); // Cleanup on unmount
-  }, [testimonials.length]);
+    }, 7500);
+    return () => clearInterval(interval);
+  }, [content.testimonials.length]);
 
   const currentTestimonial = content.testimonials[currentIndex];
 
+  const handleVideoClick = (videoId) => {
+    setPlayingVideo(playingVideo === videoId ? null : videoId);
+  };
+
   return (
-    <section id="testimonials" className="" ref={ref}>
-      <div className="testimonials">
-        <div className="testimonial_header">
-          <div className="flex-col">
-            <h2 id="testimonial-title">{currentTestimonial.title}</h2>
-            <img
-              id="testimonial-avatar"
-              src={currentTestimonial.avatar}
-              alt={currentTestimonial.name}
-            ></img>
-            <div className="flex">
-              <h6 className="testimonials-title">{currentTestimonial.name}</h6>
-              <div className="badge-div">
-                <img
-                  id="checked-badge"
-                  src="/images/badge-check.svg"
-                  alt="verified badge"
-                />
-              </div>
-            </div>
+    <section id="testimonials" className="testimonials-section" ref={ref}>
+      <div className="testimonials-container">
+        {/* Header */}
+        <div className="testimonials-header">
+          <div className="testimonials-badge">
+            <p className="testimonials-subtitle">Depoimentos</p>
+            <Crown id="testimonials-crown" size={18}/>
           </div>
-          <div className="testimonials-content">
-            <div className="text-box">
-              <h6 className="poppins-thin">“{currentTestimonial.content}”</h6>
-            </div>
+          <h2 className="testimonials-title">
+            Não acredite no que dissermos.
+            <br />
+            Mas acredite no que eles dizem 👇
+          </h2>
+        </div>
+
+        {/* Video Testimonials Grid */}
+        <div className="video-testimonials">
+          {/* <div className="video-testimonials-badge">
+            <h3 className="video-testimonials-title">Depoimentos em Vídeo</h3>
+            <Clapperboard size={18}/>
+          </div> */}
+          <div className="video-grid">
+            {content.videoTestimonials.map((video) => (
+              <div key={video.id} className="video-container">
+                {playingVideo === video.id ? (
+                  <div className="video-embed">
+                    <iframe
+                      src={`${video.url}?autoplay=1&rel=0`}
+                      title={`Depoimento ${video.name}`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                ) : (
+                  <div 
+                    className="video-thumbnail"
+                    onClick={() => handleVideoClick(video.id)}
+                  >
+                    <img 
+                      src={video.thumbnail} 
+                      alt={`Depoimento ${video.name}`} 
+                      className="thumbnail-image"
+                    />
+                    <div className="play-button">
+                      <Play size={48} className="play-icon" />
+                    </div>
+                    <div className="video-overlay"></div>
+                  </div>
+                )}
+                <div className="video-footer">
+                    <p className="video-name">{video.name}</p>
+                  <div className="language-indicator">
+                    {video.country === 'BR' ? (
+                      <span>🇧🇷 {video.language}</span>
+                    ) : (
+                      <span>🇬🇧 {video.language}</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-        <div className="indicator">
-          {testimonials.map((_, index) => (
-            <div
-              key={index}
-              className={`circle ${currentIndex === index ? "active" : ""}`}
-            ></div>
+
+        {/* Written Testimonials Grid */}
+        <div className="testimonials-grid">
+          {content.testimonials.map((testimonial, index) => (
+            <div key={index} className="testimonial-card">
+              <div className="testimonial-header">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="testimonial-avatar"
+                />
+                <h3 className="testimonial-name">{testimonial.name}</h3>
+              </div>
+              <p className="testimonial-content">{testimonial.content}</p>
+            </div>
           ))}
         </div>
       </div>

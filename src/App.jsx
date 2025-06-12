@@ -32,10 +32,11 @@ function App() {
             contactRef={contactRef}
           />
           <Hero ref={heroRef} />
+
           <About ref={aboutRef} />
-          <Services ref={servicesRef}/>
           <Projects ref={projectsRef} />
           <Testimonials ref={testimonialsRef} />
+          <Services ref={servicesRef}/>
           <Contact ref={contactRef} />
           <FloatingWhatsappButton/>
           <Footer />

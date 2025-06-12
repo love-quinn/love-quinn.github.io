@@ -127,6 +127,56 @@ const englishContent = {
     button2Description: "lovequinn.desenvolvimento@gmail.com",
     emailLink: "mailto:lovequinn.desenvolvimento@gmail.com",
   },
+  videoTestimonials: [
+    {
+      id: 'bruno-dantas',
+      name: 'Bruno Dantas',
+      url: 'https://www.youtube.com/embed/eqqEAcdlbZo',
+      thumbnail: 'https://img.youtube.com/vi/eqqEAcdlbZo/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Portuguese'
+    },
+    {
+      id: 'gabriela-macena',
+      name: 'Gabriela Macena',
+      url: 'https://www.youtube.com/embed/9DHnrkLeTP4',
+      thumbnail: 'https://img.youtube.com/vi/9DHnrkLeTP4/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Portuguese'
+    },
+    {
+      id: 'johan-evans',
+      name: 'Johan Evans',
+      url: 'https://youtube.com/embed/rSRIfEPWglw',
+      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
+      country: 'UK',
+      language: 'English'
+    },
+    {
+      id: 'lucas-savulski',
+      name: 'Lucas Savulski',
+      url: 'https://www.youtube.com/embed/4VfF1Ec5Ot4',
+      thumbnail: 'https://img.youtube.com/vi/4VfF1Ec5Ot4/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Portuguese'
+    },
+    {
+      id: 'maya-peregrini',
+      name: 'Maya Peregrini',
+      url: 'https://www.youtube.com/embed/7eGP5FJ0eP4',
+      thumbnail: 'https://img.youtube.com/vi/7eGP5FJ0eP4/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Portuguese'
+    },
+    {
+      id: 'rubens-neves',
+      name: 'Rubens Neves',
+      url: 'https://www.youtube.com/embed/nXdeKgqjHDg',
+      thumbnail: 'https://img.youtube.com/vi/nXdeKgqjHDg/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Portuguese'
+    }
+  ],
   testimonials: [
     {
       title: "Testimonials",
@@ -283,6 +333,56 @@ const portugueseContent = {
     button2Description: "lovequinn.desenvolvimento@gmail.com",
     emailLink: "mailto:lovequinn.desenvolvimento@gmail.com",
   },
+  videoTestimonials: [
+    {
+      id: 'bruno-dantas',
+      name: 'Bruno Dantas',
+      url: 'https://www.youtube.com/embed/eqqEAcdlbZo',
+      thumbnail: 'https://img.youtube.com/vi/eqqEAcdlbZo/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Português'
+    },
+    {
+      id: 'gabriela-macena',
+      name: 'Gabriela Macena',
+      url: 'https://www.youtube.com/embed/9DHnrkLeTP4',
+      thumbnail: 'https://img.youtube.com/vi/9DHnrkLeTP4/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Português'
+    },
+    {
+      id: 'johan-evans',
+      name: 'Johan Evans',
+      url: 'https://youtube.com/embed/rSRIfEPWglw',
+      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
+      country: 'UK',
+      language: 'English'
+    },
+    {
+      id: 'lucas-savulski',
+      name: 'Lucas Savulski',
+      url: 'https://www.youtube.com/embed/4VfF1Ec5Ot4',
+      thumbnail: 'https://img.youtube.com/vi/4VfF1Ec5Ot4/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Português'
+    },
+    {
+      id: 'maya-peregrini',
+      name: 'Maya Peregrini',
+      url: 'https://www.youtube.com/embed/7eGP5FJ0eP4',
+      thumbnail: 'https://img.youtube.com/vi/7eGP5FJ0eP4/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Português'
+    },
+    {
+      id: 'rubens-neves',
+      name: 'Rubens Neves',
+      url: 'https://www.youtube.com/embed/nXdeKgqjHDg',
+      thumbnail: 'https://img.youtube.com/vi/nXdeKgqjHDg/maxresdefault.jpg',
+      country: 'BR',
+      language: 'Português'
+    }
+  ],
   testimonials: [
     {
       title: "Depoimentos",
