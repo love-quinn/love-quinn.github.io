@@ -145,20 +145,20 @@ const englishContent = {
       language: 'Portuguese'
     },
     {
-      id: 'johan-evans',
-      name: 'Johan Evans',
-      url: 'https://youtube.com/embed/rSRIfEPWglw',
-      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
-      country: 'UK',
-      language: 'English'
-    },
-    {
       id: 'lucas-savulski',
       name: 'Lucas Savulski',
       url: 'https://www.youtube.com/embed/4VfF1Ec5Ot4',
       thumbnail: 'https://img.youtube.com/vi/4VfF1Ec5Ot4/maxresdefault.jpg',
       country: 'BR',
       language: 'Portuguese'
+    },
+    {
+      id: 'johan-evans',
+      name: 'Johan Evans',
+      url: 'https://youtube.com/embed/rSRIfEPWglw',
+      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
+      country: 'UK',
+      language: 'English'
     },
     // {
     //   id: 'maya-peregrini',
@@ -351,20 +351,20 @@ const portugueseContent = {
       language: 'Português'
     },
     {
-      id: 'johan-evans',
-      name: 'Johan Evans',
-      url: 'https://youtube.com/embed/rSRIfEPWglw',
-      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
-      country: 'UK',
-      language: 'Inglês'
-    },
-    {
       id: 'lucas-savulski',
       name: 'Lucas Savulski',
       url: 'https://www.youtube.com/embed/4VfF1Ec5Ot4',
       thumbnail: 'https://img.youtube.com/vi/4VfF1Ec5Ot4/maxresdefault.jpg',
       country: 'BR',
       language: 'Português'
+    },
+    {
+      id: 'johan-evans',
+      name: 'Johan Evans',
+      url: 'https://youtube.com/embed/rSRIfEPWglw',
+      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
+      country: 'UK',
+      language: 'Inglês'
     },
     // {
     //   id: 'maya-peregrini',
