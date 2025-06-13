@@ -160,22 +160,22 @@ const englishContent = {
       country: 'BR',
       language: 'Portuguese'
     },
-    {
-      id: 'maya-peregrini',
-      name: 'Maya Peregrini',
-      url: 'https://www.youtube.com/embed/7eGP5FJ0eP4',
-      thumbnail: 'https://img.youtube.com/vi/7eGP5FJ0eP4/maxresdefault.jpg',
-      country: 'BR',
-      language: 'Portuguese'
-    },
-    {
-      id: 'rubens-neves',
-      name: 'Rubens Neves',
-      url: 'https://www.youtube.com/embed/nXdeKgqjHDg',
-      thumbnail: 'https://img.youtube.com/vi/nXdeKgqjHDg/maxresdefault.jpg',
-      country: 'BR',
-      language: 'Portuguese'
-    }
+    // {
+    //   id: 'maya-peregrini',
+    //   name: 'Maya Peregrini',
+    //   url: 'https://www.youtube.com/embed/7eGP5FJ0eP4',
+    //   thumbnail: 'https://img.youtube.com/vi/7eGP5FJ0eP4/maxresdefault.jpg',
+    //   country: 'BR',
+    //   language: 'Portuguese'
+    // },
+    // {
+    //   id: 'rubens-neves',
+    //   name: 'Rubens Neves',
+    //   url: 'https://www.youtube.com/embed/nXdeKgqjHDg',
+    //   thumbnail: 'https://img.youtube.com/vi/nXdeKgqjHDg/maxresdefault.jpg',
+    //   country: 'BR',
+    //   language: 'Portuguese'
+    // }
   ],
   testimonials: [
     {
@@ -366,22 +366,22 @@ const portugueseContent = {
       country: 'BR',
       language: 'Português'
     },
-    {
-      id: 'maya-peregrini',
-      name: 'Maya Peregrini',
-      url: 'https://www.youtube.com/embed/7eGP5FJ0eP4',
-      thumbnail: 'https://img.youtube.com/vi/7eGP5FJ0eP4/maxresdefault.jpg',
-      country: 'BR',
-      language: 'Português'
-    },
-    {
-      id: 'rubens-neves',
-      name: 'Rubens Neves',
-      url: 'https://www.youtube.com/embed/nXdeKgqjHDg',
-      thumbnail: 'https://img.youtube.com/vi/nXdeKgqjHDg/maxresdefault.jpg',
-      country: 'BR',
-      language: 'Português'
-    }
+    // {
+    //   id: 'maya-peregrini',
+    //   name: 'Maya Peregrini',
+    //   url: 'https://www.youtube.com/embed/7eGP5FJ0eP4',
+    //   thumbnail: 'https://img.youtube.com/vi/7eGP5FJ0eP4/maxresdefault.jpg',
+    //   country: 'BR',
+    //   language: 'Português'
+    // },
+    // {
+    //   id: 'rubens-neves',
+    //   name: 'Rubens Neves',
+    //   url: 'https://www.youtube.com/embed/nXdeKgqjHDg',
+    //   thumbnail: 'https://img.youtube.com/vi/nXdeKgqjHDg/maxresdefault.jpg',
+    //   country: 'BR',
+    //   language: 'Português'
+    // }
   ],
   testimonials: [
     {
