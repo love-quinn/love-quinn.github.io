@@ -356,7 +356,7 @@ const portugueseContent = {
       url: 'https://youtube.com/embed/rSRIfEPWglw',
       thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
       country: 'UK',
-      language: 'English'
+      language: 'Inglês'
     },
     {
       id: 'lucas-savulski',
