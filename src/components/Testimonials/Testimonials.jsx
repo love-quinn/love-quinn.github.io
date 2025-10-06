@@ -31,13 +31,11 @@ const Testimonials = React.forwardRef(function Testimonials(props, ref) {
         {/* Header */}
         <div className="testimonials-header">
           <div className="testimonials-badge">
-            <p className="testimonials-subtitle">Depoimentos</p>
+            <p className="testimonials-subtitle">{content.badge}</p>
             <Crown id="testimonials-crown" size={18}/>
           </div>
           <h2 className="testimonials-title">
-            Não acredite no que dissermos.
-            <br />
-            Mas acredite no que eles dizem 👇
+            {content.title}
           </h2>
         </div>
 

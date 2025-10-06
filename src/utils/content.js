@@ -169,6 +169,8 @@ const englishContent = {
     //   language: 'Portuguese'
     // }
   ],
+  badge: "Testimonials",
+  title: "Don't believe in what we say, believe in what they say 👇🏼",
   testimonials: [
     {
       title: "Testimonials",
@@ -367,6 +369,8 @@ const portugueseContent = {
     //   language: 'Português'
     // }
   ],
+  badge: "Depoimentos",
+  title: "Não acredite no que dissermos. Mas acredite no que eles dizem 👇🏼",
   testimonials: [
     {
       title: "Depoimentos",
@@ -389,6 +393,7 @@ const portugueseContent = {
       content:
         "Desenvolveu soluções robustas e eficientes, sempre com um olhar atento para detalhes e prazos. Além das habilidades técnicas, Lucas também é ótimo em colaborar e compartilhar conhecimentos.",
     },
+    
   ],
   footer: {
     copyrightMessage: "Copyright © 2024. Todos os direitos reservados",
