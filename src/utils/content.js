@@ -25,7 +25,7 @@ const englishContent = {
     title: "About me",
     title2: `Full Stack Developer
         based in Sao Paulo, Brazil 📍`,
-    description1: `Hey, my name is Lucas(Love Quinn), and I'm a Full Stack Developer.
+    description1: `Hey, my name is Lucas Santana, and I'm a Full Stack Developer.
         My passion is to create and develop a clean Websites , Bots and Apps for my users, in
         order to help them in their daily life with technology, I also
         have a `,
@@ -152,14 +152,6 @@ const englishContent = {
       country: 'BR',
       language: 'Portuguese'
     },
-    {
-      id: 'johan-evans',
-      name: 'Johan Evans',
-      url: 'https://youtube.com/embed/rSRIfEPWglw',
-      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
-      country: 'UK',
-      language: 'English'
-    },
     // {
     //   id: 'maya-peregrini',
     //   name: 'Maya Peregrini',
@@ -236,13 +228,13 @@ const portugueseContent = {
     title: `Sobre`,
     title2: `Desenvolvedor Full Stack
         situado em São Paulo, Brasil 📍`,
-    description1: `Olá, meu nome é Lucas(Love Quinn) e sou um Desenvolvedor Full Stack.
+    description1: `Olá, meu nome é Lucas Santana e sou um Desenvolvedor Full Stack.
         Minha paixão é criar e desenvolver Aplicativos, Bots e Websites com design limpos e modernos para meus usuários
         para ajudá-los no dia a dia com a tecnologia, também
         tenho um `,
     spanContent: `Canal no Youtube`,
     description2: ` onde gosto de compartilhar meus conhecimentos com a comunidade.`,
-    description3: `Minha stack principal atualmente é React/Vite em conjunto com Tailwind CSS e TypeScript.`,
+    description3: `Minha stack principal atualmente é React/NextJs em conjunto com Tailwind CSS, NodeJs e TypeScript.`,
   },
   services: {
     mainText: "Serviços",
@@ -330,8 +322,8 @@ const portugueseContent = {
     button1Title: "Localização",
     button1Description: "São Paulo, Brasil",
     button2Title: "Email",
-    button2Description: "lovequinn.desenvolvimento@gmail.com",
-    emailLink: "mailto:lovequinn.desenvolvimento@gmail.com",
+    button2Description: "lucaslucal75@gmail.com",
+    emailLink: "mailto:lucaslucal75@gmail.com",
   },
   videoTestimonials: [
     {
@@ -357,14 +349,6 @@ const portugueseContent = {
       thumbnail: 'https://img.youtube.com/vi/4VfF1Ec5Ot4/maxresdefault.jpg',
       country: 'BR',
       language: 'Português'
-    },
-    {
-      id: 'johan-evans',
-      name: 'Johan Evans',
-      url: 'https://youtube.com/embed/rSRIfEPWglw',
-      thumbnail: 'https://img.youtube.com/vi/rSRIfEPWglw/maxresdefault.jpg',
-      country: 'UK',
-      language: 'Inglês'
     },
     // {
     //   id: 'maya-peregrini',

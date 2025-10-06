@@ -16,9 +16,9 @@ const englishData = [
     isSlideshow: false,
   },
   {
-    projectName: "Otavio Lawyers",
-    projectImgPath: "/images/desktop-otavio-advogados.png",
-    projectImgPathSmall: "/images/mobile-otavio-advogados.png",
+    projectName: "MyRavie",
+    projectImgPath: "/images/myravie-desktop.png",
+    projectImgPathSmall: "/images/myravie-mobile.png",
     projectDescription:
       "Landing Page for a Legal Advisory and Consultancy in Uberlândia.",
     projectLiveDemoUrl: {
@@ -41,6 +41,19 @@ const englishData = [
     },
     stack: ["React", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
     isSlideshow: false,
+  },
+  {
+    projectName: "Otavio Lawyers",
+    projectImgPath: "/images/desktop-otavio-advogados.png",
+    projectImgPathSmall: "/images/mobile-otavio-advogados.png",
+    projectDescription:
+      "Landing Page for a Legal Advisory and Consultancy in Uberlândia.",
+    projectLiveDemoUrl: {
+      buttonName: "Site",
+      projectButtonFaClass: "fa-regular fa-share-from-square",
+      url: "https://otavio-advogados.kesug.com/",
+    },
+    stack: ["Elementor", "Wordpress"],
   },
   {
     projectName: "Gesture Volume Controller",
@@ -77,11 +90,11 @@ const portugueseData = [
     isSlideshow: false,
   },
   {
-    projectName: "Otavio Advogados",
-    projectImgPath: "/images/desktop-otavio-advogados.png",
-    projectImgPathSmall: "/images/mobile-otavio-advogados.png",
+    projectName: "MyRavie",
+    projectImgPath: "/images/myravie-desktop.png",
+    projectImgPathSmall: "/images/myravie-mobile.png",
     projectDescription:
-      "Landing Page para uma Assesoria e Consultoria Jurídica em Uberlândia.",
+      "Landing Page for a Legal Advisory and Consultancy in Uberlândia.",
     projectLiveDemoUrl: {
       buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
@@ -101,6 +114,19 @@ const portugueseData = [
       url: "https://www.novafutura.com.br/",
     },
     stack: ["React", "Bootstrap", "JavaScript", "HTML5", "CSS3"],
+  },
+  {
+    projectName: "Otavio Advogados",
+    projectImgPath: "/images/desktop-otavio-advogados.png",
+    projectImgPathSmall: "/images/mobile-otavio-advogados.png",
+    projectDescription:
+      "Landing Page para uma Assesoria e Consultoria Jurídica em Uberlândia.",
+    projectLiveDemoUrl: {
+      buttonName: "Site",
+      projectButtonFaClass: "fa-regular fa-share-from-square",
+      url: "https://otavio-advogados.kesug.com/",
+    },
+    stack: ["Elementor", "Wordpress"],
   },
   {
     projectName: "Controlador de Volume por Gestos",
