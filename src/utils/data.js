@@ -12,7 +12,7 @@ const englishData = [
       projectButtonFaClass: "fa-regular fa-share-from-square",
       url: "https://www.biofy.shop/",
     },
-    stack: ["Next.Js", "React", "TypeScript", "JavaScript"],
+    stack: ["Next.Js", "React", "TypeScript", "JavaScript", "NodeJS"],
     isSlideshow: false,
   },
   {
@@ -20,13 +20,13 @@ const englishData = [
     projectImgPath: "/images/myravie-desktop.png",
     projectImgPathSmall: "/images/myravie-mobile.png",
     projectDescription:
-      "Landing Page for a Legal Advisory and Consultancy in Uberlândia.",
+      "All-in-one place with AI: A designer, photography studio and influencer.",
     projectLiveDemoUrl: {
       buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://otavio-advogados.kesug.com/",
+      url: "https://myravie.com/",
     },
-    stack: ["Elementor", "Wordpress"],
+    stack: ["Next.Js", "React", "TypeScript", "JavaScript", "NodeJS"],
   },
   {
     projectName: "Nova Futura",
@@ -86,7 +86,7 @@ const portugueseData = [
       projectButtonFaClass: "fa-regular fa-share-from-square",
       url: "https://www.biofy.shop/",
     },
-    stack: ["Next.Js", "React", "TypeScript", "JavaScript"],
+    stack: ["Next.Js", "React", "TypeScript", "JavaScript", "NodeJS"],
     isSlideshow: false,
   },
   {
@@ -94,13 +94,13 @@ const portugueseData = [
     projectImgPath: "/images/myravie-desktop.png",
     projectImgPathSmall: "/images/myravie-mobile.png",
     projectDescription:
-      "Landing Page for a Legal Advisory and Consultancy in Uberlândia.",
+      "Tudo em um só lugar com IA: um designer, estúdio de fotografia e influenciador.",
     projectLiveDemoUrl: {
       buttonName: "Site",
       projectButtonFaClass: "fa-regular fa-share-from-square",
-      url: "https://otavio-advogados.kesug.com/",
+      url: "https://myravie.com/",
     },
-    stack: ["Elementor", "Wordpress"],
+    stack: ["Next.Js", "React", "TypeScript", "JavaScript", "NodeJS"],
   },
   {
     projectName: "Nova Futura",
